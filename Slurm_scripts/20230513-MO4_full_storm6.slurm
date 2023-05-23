@@ -15,7 +15,7 @@ date +'Starting at %R.'
 . "/home/puzheng/miniconda3/bin/conda"
 export PATH="/home/puzheng/miniconda3/bin:$PATH"
 #change_to_merlin_environment
-conda activate merlin_env
+source activate merlin_env
 
 merlin -a 20230513-MOp_cellpose.json \
 		-o 20230513-MO4_38bit.csv \
