@@ -1,13 +1,13 @@
 {
     "__default__" : {
-        "account" : "zhuang_lab",
+        "account" : "weissman",
         "time" : "24:00:00",
         "n" : 1,
-        "partition" : "zhuang",
+        "partition" : "weissman",
         "mem" : 10000,
-        "exclude" : "holyzhuang01",
-        "out" : "/n/holyscratch01/zhuang_lab/Users/pzheng/Analysis_results/Logs/job_stdoe_tmp/%j.stdout.txt",
-        "err" : "/n/holyscratch01/zhuang_lab/Users/pzheng/Analysis_results/Logs/job_stdoe_tmp/%j.stderr.txt"
+        "exclude" : "c3b7",
+        "out" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stdout.txt",
+        "err" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stderr.txt"
     },
     "AdaptiveFilterBarcodes" : {
         "mem" : 5000
