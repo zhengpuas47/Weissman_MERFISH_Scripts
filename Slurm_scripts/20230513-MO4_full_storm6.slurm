@@ -1,7 +1,8 @@
 #!/bin/bash
 #SBATCH -n 1
 #SBATCH -N 1
-#SBATCH -p weissman
+#SBATCH --partition=weissman            # partition (queue) to use; 20 for shared, weissman for dedicated
+#SBATCH --account=weissman              # this is necessary if partition is weissman
 #SBATCH -t 2-00:00:00
 #SBATCH --mem 16000
 #SBATCH --open-mode=append
