@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -n 1
 #SBATCH -N 1
-#SBATCH -p zhuang
+#SBATCH -p weissman
 #SBATCH -t 2-00:00:00
 #SBATCH --mem 16000
 #SBATCH --open-mode=append
@@ -16,14 +16,14 @@ export PATH="/home/puzheng/miniconda3/bin:$PATH"
 #change_to_merlin_environment
 conda activate merlin_env
 
-merlin -a 20221025-hM1_cellpose.json \
-		-o 20221025-hM1_22bits_adaptors.csv \
-		-c human_M1_codebook.csv \
+merlin -a 20230513-MOp_cellpose.json \
+		-o 20230513-MO4_38bit.csv \
+		-c MO4_codebook.csv \
 		-m storm6_microscope.json \
 		-p 20230513_positions_all.txt \
 		-e /lab/weissman_imaging/puzheng/MERFISH_data \
 		-s /lab/weissman_imaging/puzheng/MERFISH_analysis \
-		-k run_hM1_cellpose.json \
+		-k run_MO4_cellpose.json \
 		-n 2 \
 		--no_report True \
 		20230513-wtBrain_MO4
