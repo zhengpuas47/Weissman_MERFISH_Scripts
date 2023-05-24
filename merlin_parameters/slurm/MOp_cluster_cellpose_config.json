@@ -1,13 +1,13 @@
 {
     "__default__" : {
         "account" : "weissman",
-        "time" : "24:00:00",
+        "time" : "12:00:00",
         "n" : 1,
         "partition" : "weissman",
         "mem" : 10000,
-        "exclude" : "c3b7",
-        "out" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stdout.txt",
-        "err" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stderr.txt"
+        "nodelist" : "c4b[1,2,15],c3b7",
+        "out" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stdout",
+        "err" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stderr"
     },
     "AdaptiveFilterBarcodes" : {
         "mem" : 5000
