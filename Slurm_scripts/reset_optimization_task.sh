@@ -5,7 +5,7 @@
 #SBATCH --mem 1000
 #SBATCH --open-mode=append
 #SBATCH --partition=20            # partition (queue) to use; 20 for shared, weissman for dedicated
-#SBATCH --account=wibruser              # this is necessary if partition is weissman
+#SBATCH --account=wibrusers              # this is necessary if partition is weissman
 #SBATCH -o /lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stdout
 #SBATCH -e /lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stderr
 
