@@ -17,17 +17,17 @@ date +'Starting at %R.'
 #change_to_merlin_environment
 #conda activate merlin_env
 
-merlin -a 20230513-MOp_cellpose.json \
-		-o 20230513-MO4_38bit.csv \
-		-c MO4_codebook.csv \
+merlin -a 20230622-MOp_noSegment.json \
+		-o 20230622-C2_20bit.csv \
+		-c C2v6_codebook.csv \
 		-m storm6_microscope.json \
-		-p 20230513_positions_all.txt \
+		-p 20230622_positions.txt \
 		-e /lab/weissman_imaging/puzheng/MERFISH_data \
 		-s /lab/weissman_imaging/puzheng/MERFISH_analysis \
-		-k run_MO4_cellpose.json \
+		-k run_C2_cellpose.json \
 		-n 2 \
 		--no_report True \
-		20230513-wtBrain_MO4
+		20230622-4T1primary_C2
 #NOTES:
 #analysis_parameter
 #data_organization_file
