@@ -79,7 +79,7 @@
         "mem" : 5000
     },
     "PlotPerformance" : {
-        "mem" : 40000
+        "mem" : 60000
     },
     "RefineCellDatabases" : {
         "mem" : 5000
