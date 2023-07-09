@@ -10,7 +10,7 @@
         "err" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stderr"
     },
     "AdaptiveFilterBarcodes" : {
-        "mem" : 10000
+        "mem" : 20000
     },
     "CleanCellBoundaries" : {
         "mem" : 5000
