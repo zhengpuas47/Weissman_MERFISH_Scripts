@@ -17,7 +17,7 @@ date +'Starting at %R.'
 #change_to_merlin_environment
 #conda activate merlin_env
 
-merlin -a 20230622-MOp_noSegment.json \
+merlin -a 20230622-C2_noSegment.json \
 		-o 20230622-C2_20bit.csv \
 		-c C2v6_codebook.csv \
 		-m storm6_microscope.json \
