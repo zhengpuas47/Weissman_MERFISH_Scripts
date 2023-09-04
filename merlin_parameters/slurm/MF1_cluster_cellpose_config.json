@@ -1,0 +1,96 @@
+{
+    "__default__" : {
+        "account" : "weissman",
+        "time" : "12:00:00",
+        "n" : 1,
+        "partition" : "weissman",
+        "mem" : 10000,
+        "nodelist" : "c4b[1,2,15],c3b7",
+        "out" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stdout",
+        "err" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stderr"
+    },
+    "AdaptiveFilterBarcodes" : {
+        "mem" : 10000
+    },
+    "CleanCellBoundaries" : {
+        "mem" : 5000
+    },
+    "CombineCleanedBoundaries" : {
+        "mem" : 5000
+    },
+    "Decode" : {
+        "mem" : 5000
+    },
+    "DeconvolutionPreprocess" : {
+        "mem" : 2000
+    },
+    "ExportBarcodes" : {
+        "mem" : 20000
+    },
+    "ExportCellMetadata" : {
+        "mem" : 20000
+    },
+    "ExportPartitionedBarcodes" : {
+        "mem" : 15000
+    },
+    "ExportSumSignals" : {
+        "mem" : 15000
+    },
+    "FiducialCorrelationWarp" : {
+        "mem" : 2000
+    },
+    "FilterBarcodes" : {
+        "mem" : 15000
+    },
+    "GenerateAdaptiveThreshold" : {
+        "mem" : 50000
+    },  
+    "Optimize1" : {
+        "mem" : 5000
+    },
+    "Optimize2" : {
+        "mem" : 5000
+    },
+    "Optimize3" : {
+        "mem" : 5000
+    },
+    "Optimize4" : {
+        "mem" : 5000
+    },
+    "Optimize5" : {
+        "mem" : 5000
+    },
+    "Optimize6" : {
+        "mem" : 5000
+    },
+    "Optimize7" : {
+        "mem" : 5000
+    },
+    "Optimize8" : {
+        "mem" : 5000
+    },
+    "Optimize9" : {
+        "mem" : 5000
+    },
+    "Optimize10" : {
+        "mem" : 5000
+    },
+    "PartitionBarcodes" : {
+        "mem" : 5000
+    },
+    "PlotPerformance" : {
+        "mem" : 50000
+    },
+    "RefineCellDatabases" : {
+        "mem" : 5000
+    },
+    "SimpleGlobalAlignment" : {
+        "mem" : 3000
+    },
+    "SumSignals" : {
+        "mem" : 3000
+    },
+    "CellPoseSegment" : {
+        "mem" : 10000
+    }
+}
