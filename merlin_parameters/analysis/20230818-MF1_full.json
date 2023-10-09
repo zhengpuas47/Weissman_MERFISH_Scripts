@@ -6,7 +6,7 @@
             "parameters": {
                 "highpass_sigma": 5,
                 "write_fiducial_images": true,
-                "write_aligned_images": true
+                "write_aligned_images": false
             }
         },
         {
