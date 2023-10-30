@@ -5,7 +5,7 @@
 #SBATCH --mem 16000
 #SBATCH --open-mode=append
 #SBATCH --partition=weissman            # partition (queue) to use; 20 for shared, weissman for dedicated
-#SBATCH --account=weissman              # this is necessary if partition is weissman
+#SBATCH --account=weissman              # this is necessary if partition is weissman, for partition-20, use wibrusers
 #SBATCH -o /lab/weissman_imaging/puzheng/slurm_reports/MERLin_Scheduler/%j.stdout
 #SBATCH -e /lab/weissman_imaging/puzheng/slurm_reports/MERLin_Scheduler/%j.stdout
 
