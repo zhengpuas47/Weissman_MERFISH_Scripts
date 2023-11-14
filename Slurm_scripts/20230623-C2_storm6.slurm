@@ -15,19 +15,19 @@ date +'Starting at %R.'
 #. "/home/puzheng/miniconda3/bin/conda"
 #export PATH="/home/puzheng/miniconda3/bin:$PATH"
 #change_to_merlin_environment
-#conda activate merlin_env
+#conda activate merlin_py310
 
 merlin -a 20230623-C2_full.json \
-		-o 20230622-C2_20bit.csv \
+		-o 20230623-C2_20bit.csv \
 		-c C2v6_codebook.csv \
 		-m storm6_microscope.json \
-		-p 20230622_positions.txt \
+		-p 20230623_positions.txt \
 		-e /lab/weissman_imaging/puzheng/MERFISH_data \
 		-s /lab/weissman_imaging/puzheng/MERFISH_analysis \
 		-k run_C2_cellpose.json \
 		-n 2 \
 		--no_report True \
-		20230622-4T1primary_C2
+		20230623-KPtumor_C2
 #NOTES:
 #analysis_parameter
 #data_organization_file
