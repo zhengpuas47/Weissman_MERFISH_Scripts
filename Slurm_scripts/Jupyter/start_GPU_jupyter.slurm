@@ -7,8 +7,8 @@
 #SBATCH --cpus-per-task=8         # Enter number of cores/threads you wish to request
 #SBATCH --mem=64gb                # Enter amount of memory you wish to request
 #SBATCH --time 1-00:00:00           # max time that the job/jupyter instance actually needs to be running (in dd:hh:mm format)
-#SBATCH --account=wibrusers        # weissman account needed for sabre access
-#SBATCH --partition=nvidia-A4000-20         # partition (queue) to use
+#SBATCH --account=weissman        # weissman account needed for sabre access
+#SBATCH --partition=sabre         # partition (queue) to use
 #SBATCH --output %x-%j.out        # name of output file.  %x is the job-name %j is jobid
 
 #SBATCH -o /lab/weissman_imaging/puzheng/slurm_reports/GPU_jupyter/%j.stdout
