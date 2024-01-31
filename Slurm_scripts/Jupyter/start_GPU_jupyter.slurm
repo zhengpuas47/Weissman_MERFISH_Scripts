@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1                # Run a single task
 #SBATCH --cpus-per-task=8         # Enter number of cores/threads you wish to request
 #SBATCH --mem=64gb                # Enter amount of memory you wish to request
-#SBATCH --time 1-00:00:00           # max time that the job/jupyter instance actually needs to be running (in dd:hh:mm format)
+#SBATCH --time 2-00:00:00           # max time that the job/jupyter instance actually needs to be running (in dd:hh:mm format)
 #SBATCH --account=weissman        # weissman account needed for sabre access
 #SBATCH --partition=sabre         # partition (queue) to use
 #SBATCH --output %x-%j.out        # name of output file.  %x is the job-name %j is jobid
@@ -14,7 +14,7 @@
 #SBATCH -o /lab/weissman_imaging/puzheng/slurm_reports/GPU_jupyter/%j.stdout
 #SBATCH -e /lab/weissman_imaging/puzheng/slurm_reports/GPU_jupyter/%j.stdout
 
-#SBATCH --gres=gpu:1              # This is needed to actually access a gpu
+#SBATCH --gres=gpu:2              # This is needed to actually access a gpu
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=puzheng@wi.mit.edu
 

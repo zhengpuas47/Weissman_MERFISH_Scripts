@@ -1,0 +1,4094 @@
+    1  pwd
+    2  ls
+    3  conda
+    4  python
+    5  jupyter notebook
+    6  ls
+    7  python
+    8  pwd
+    9  ls
+   10  mkdir Softwares
+   11  ls
+   12  cd Softwares/
+   13  git clone https://github.com/YosefLab/Cassiopeia.git
+   14  cd Cassiopeia/
+   15  dir
+   16  make install
+   17  python
+   18  pip
+   19  ls
+   20  pip -v
+   21  pip -V
+   22  pwd
+   23  make install
+   24  /usr/bin/python -m pip install --upgrade pip
+   25  pip -V
+   26  make install
+   27  conda create -n cassiopeia_env python=3.8
+   28  conda
+   29  anaconda
+   30  pip install git+https://github.com/YosefLab/Cassiopeia@master#egg=cassiopeia-lineage
+   31  pwd
+   32  ls -l
+   33  conda
+   34  cd ~
+   35  python
+   36  ls /usr/bin
+   37  ls /usr/bin/pytho&
+   38  ls /usr/bin/pytho*
+   39  which python
+   40  virtualenv --python=/usr/bin/python3.7 python37env
+   41  source python37env/bin/activate
+   42  which python
+   43  which pip
+   44  pip -v
+   45  pip -V
+   46  ls
+   47  cd Softwares/
+   48  ls
+   49  cd Cassiopeia/
+   50  ls
+   51  python setup.py install --user
+   52  pip install gurobipy
+   53  grbgetkey b4b8a15e-a017-11ed-b1e0-0242ac120003
+   54  ls
+   55  cd ..
+   56  ls
+   57  cd ..
+   58  ls
+   59  cd Softwares/Cassiopeia/
+   60  ls
+   61  gurobi.sh
+   62  ls
+   63  pip install -e .
+   64  ls
+   65  pip install ipykernel
+   66  python -m ipykernel install --user py37 --display-name "py37 env"
+   67  python -m ipykernel install --user --name py37 --display-name "py37 kernel"
+   68  pwd
+   69  ls
+   70  ssh pzheng@login.rc.fas.harvard.edu
+   71  pwd
+   72  ls
+   73  cd /lab/solexa_weissman/
+   74  ls
+   75  mkdir puzheng
+   76  ls
+   77  ls -l
+   78  cd puzheng
+   79  ls
+   80  pwd
+   81  scp pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Users/pzheng/Archived/20210717-P_brain_MO4_MERFISH.tar.zst /lab/solexa_weissman/puzheng/
+   82  ls
+   83  cd Softwares/
+   84  ls
+   85  conda
+   86  source activate py37
+   87  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   88  chmod a+x ./Miniconda3-latest-Linux-x86_64.sh
+   89  ls
+   90  bash ./Miniconda3-latest-Linux-x86_64.sh
+   91  conda
+   92  python
+   93  conda
+   94  ls
+   95  exit()
+   96  exit
+   97  conda
+   98  conda create -n merlin_env python=3.8
+   99  conda activate merlin_env
+  100  python
+  101  which python
+  102  ssh-keygen -t rsa -b 4096 -C "zhengpuas47@gmail.com"
+  103  eval $(ssh-agent -s)
+  104  pbcopy < ~/.ssh/id_rsa.pub
+  105  xclip -sel c < ~/.ssh/id_rsa.pub
+  106  cat ~/.ssh/id_rsa.pub
+  107  ssh -T git@github.com
+  108  git config --global user.name "zhengpuas47"
+  109  git config --global user.email "zhengpuas47@gmail.com"
+  110  ssh -T git@github.com
+  111  ls
+  112  cd Softwares/
+  113  ls
+  114  git clone git@github.com:zhengpuas47/MERlin.git
+  115  ls
+  116  rm Miniconda3-latest-Linux-x86_64.sh 
+  117  ls
+  118  ls
+  119  tar --use-compress-program=unzstd -xvf 20210717-P_brain_MO4_MERFISH.tar.zst 
+  120  zstd
+  121  apt-get install zstd
+  122  zstd
+  123  tar --use-compress-program=unzstd -xvf 20210717-P_brain_MO4_MERFISH.tar.zst 
+  124  ls
+  125  cd 20210717-P_brain_MO4_MERFISH/
+  126  ls
+  127  cd ..
+  128  ls
+  129  exit
+  130  exit
+  131  ls
+  132  cd Softwares/
+  133  ls
+  134  cd MERlin/
+  135  conda activate merlin_env
+  136  ls
+  137  git checkout
+  138  conda install h5py rtree pytables
+  139  cd ..
+  140  pip install -e MERlin/
+  141  merlin -h
+  142  ls
+  143  git clone git@github.com:zhengpuas47/MERFISH_probe_design.git
+  144  git clone git@github.com:zhengpuas47/Merfish_Analysis_Scripts.git
+  145  ls
+  146  cd Merfish_Analysis_Scripts/
+  147  ls
+  148  cd ..
+  149  ls
+  150  git clone git@github.com:zhengpuas47/ChromAn.git
+  151  history
+  152  exit
+  153  ls
+  154  pwd
+  155  ls
+  156  cd MERFISH_Probes/
+  157  ls
+  158  pwd
+  159  virtualenv
+  160  conda
+  161  conda activate merlin_env
+  162  ls
+  163  conda deactivate
+  164  conda activate merlin_env
+  165  python -m ipykernel install --user --name=merlin_env
+  166  conda deactivate
+  167  conda create -n postanalysis python=3.9 anaconda
+  168  conda activate postanalysis
+  169  conda install biopython
+  170  pip install pyfftw opencv-python
+  171  	pip install pyfftw opencv-python
+  172  python -m ipykernel install --user --name=postanalysis
+  173  ls
+  174  cd ..
+  175  ls
+  176  cd Softwares/
+  177  ls
+  178  conda install seaborn scikit-learn statsmodels numba pytables
+  179  conda install -c conda-forge python-igraph leidenalg
+  180  ls
+  181  cd Softwares/
+  182  ls
+  183  conda activate postanalysis
+  184  ls
+  185  conda install -c conda-forge python-igraph leidenalg
+  186  pwd
+  187  ls
+  188  cd ..
+  189  ls
+  190  cd MERFISH_Probes/
+  191  ls
+  192  pwd
+  193  exit
+  194  ls
+  195  cd /lab/solexa_weissman/puzheng
+  196  ls
+  197  cd MERFISH_Probes/
+  198  ls
+  199  pwd
+  200  ls
+  201  pwd
+  202  cd Softwares/
+  203  cd 
+  204  ls
+  205  cd Softwares/
+  206  ls
+  207  cd /lab/solexa_weissman/puzheng/
+  208  ls
+  209  mkdir References
+  210  ls
+  211  cd References/
+  212  ls
+  213  mkdir GRCm39
+  214  cd GRCm39/
+  215  ls
+  216  wget https://ftp.ensembl.org/pub/release-109/fasta/mus_musculus/dna/*_rm.*.fa.gz
+  217  mget https://ftp.ensembl.org/pub/release-109/fasta/mus_musculus/dna/*_rm.*.fa.gz
+  218  rsync -av rsync://ftp.ensembl.org/pub/release-109/fasta/mus_musculus/dna/*_rm.*.fa.gz
+  219  rsync -av rsync://ftp.ensembl.org/pub/release-109/fasta/mus_musculus/dna/*_rm.*.fa.gz .
+  220  rsync -av rsync://ftp.ensembl.org/pub/release-109/fasta/mus_musculus/dna/ .
+  221  ftp
+  222  wget -m ftp://ftp.ensembl.org/pub/release-109/fasta/mus_musculus/dna/*_rm.*.fa.gz
+  223  ls
+  224  cd ftp.ensembl.org/
+  225  ls
+  226  cd pub/
+  227  ls
+  228  cd release-109/
+  229  ls
+  230  cd fasta/
+  231  ls
+  232  cd mus_musculus/
+  233  ls
+  234  cd dna/
+  235  ls
+  236  cd ..
+  237  ls
+  238  cd ..
+  239  ls
+  240  cd ..
+  241  ks
+  242  ls
+  243  cd ..
+  244  ls
+  245  rm -r ftp.ensembl.org/
+  246  ls
+  247  rm ftp.ensembl.org/
+  248  rm -d ftp.ensembl.org/
+  249  rm -r ftp.ensembl.org/
+  250  ls
+  251  wget -m --no-parent ftp://ftp.ensembl.org/pub/release-109/fasta/mus_musculus/dna/*_sm.*.fa.gz
+  252  conda activate postanalysis
+  253  ls
+  254  cd S
+  255  ls
+  256  cd Softwares/
+  257  ls
+  258  conda activate postanalysis
+  259  cd MERFISH_probe_design/
+  260  ls
+  261  pip install -e .
+  262  python
+  263  ls
+  264  cd .
+  265  ls
+  266  cd ..
+  267  ls
+  268  wget http://zhuang.harvard.edu/merfish/MERFISHData/MERFISH_Examples2.zip -O MERFISH_Examples2.zip
+  269  wget https://zhuang.harvard.edu/merfish/MERFISHData/MERFISH_Examples2.zip -O MERFISH_Examples2.zip
+  270  ls
+  271  cd MERFISH_Examples2
+  272  ls
+  273  less isoforms.fpkm_tracking 
+  274  ls
+  275  vim Homo_sapiens.GRCh38.ncrna.fa 
+  276  cd ..
+  277  ls
+  278  cd GRCm39/
+  279  ls
+  280  cd Transcriptome/
+  281  ls
+  282  vim Mus_musculus.GRCm39.cdna.all.fa 
+  283  ls
+  284  conda activate postanalysis
+  285  python
+  286  ls
+  287  cd Softwares
+  288  ls
+  289  python3 -m pip install -U nupack -f ~/Softwares/nupack-4.0.1.7/package
+  290  pip show nupack
+  291  ls
+  292  cd /lab/weissman_imaging
+  293  ls
+  294  ls -l
+  295  pwd
+  296  ls
+  297  cd puzheng/
+  298  ls
+  299  ls -l
+  300  ls
+  301  ls
+  302  pwd
+  303  ls
+  304  cd ~
+  305  ls
+  306  cd S
+  307  cd Softwares/
+  308  ls
+  309  cd ChromAn/
+  310  git pull
+  311  conda activate postanalysis
+  312  conda install ipympl
+  313  jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib@0.7.0
+  314  jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+  315  ls
+  316  git pull
+  317  ls
+  318  cd ..
+  319  ls
+  320  pwd
+  321  exit
+  322  plscu
+  323  lscpu
+  324  conda activate postanalysis
+  325  ls
+  326  cd Softwares/
+  327  ls
+  328  cd MERFISH_probe_design/
+  329  ls
+  330  git pull
+  331  cd ..
+  332  cd ChromAn/
+  333  git pull
+  334  ls
+  335  cd ..
+  336  ls
+  337  ls -l
+  338  cd ..
+  339  ls
+  340  cd MERFISH_Probes/
+  341  ls
+  342  cd So
+  343  cd ..
+  344  ls
+  345  cd Softwares/
+  346  ls
+  347  ls 
+  348  ls /lab/weissman_imaging/puzheng/Softwares
+  349  ls
+  350  mv ChromAn/ /lab/weissman_imaging/puzheng/Softwares
+  351  ls
+  352  mv MERFISH_probe_design/ /lab/weissman_imaging/puzheng/Softwares
+  353  mv Merfish_Analysis_Scripts/ /lab/weissman_imaging/puzheng/Softwares
+  354  ls
+  355  opythn
+  356  python
+  357  ls
+  358  cd /lab/weissman_imaging/puzheng/Softwares
+  359  ls
+  360  pip install -e MERFISH_probe_design/
+  361  python
+  362  ls
+  363  cd ..
+  364  ls
+  365  cd ~
+  366  ls
+  367  cd Scripts/
+  368  ls
+  369  cd Slurm/l
+  370  cd Slurm/=
+  371  cd Slurm/
+  372  ls
+  373  sbatch 20230320-run_nupack.sh 
+  374  sbatch 20230320-run_nupack.sh -p weissman
+  375  squeue
+  376  sbatch -p 20 20230320-run_nupack.sh
+  377  squeue
+  378  squeue -u puzheng
+  379  conda
+  380  squeue -u puzheng
+  381  sbatch -p 20 20230320-run_nupack.sh
+  382  squeue -u puzheng
+  383  sbatch 20230320-run_nupack.sh
+  384  watch squeue -u puzheng
+  385  sbatch 20230320-run_nupack.sh
+  386  watch squeue -u puzheng
+  387  sbatch 20230320-run_nupack.sh
+  388  watch squeue -u puzheng
+  389  sbatch 20230320-run_nupack.sh
+  390  watch squeue -u puzheng
+  391  sbatch 20230320-run_nupack.sh
+  392  watch squeue -u puzheng
+  393  sbatch 20230320-run_nupack.sh
+  394  scancel 161957
+  395  sbatch 20230320-run_nupack.sh
+  396  watch squeue -u puzheng
+  397  scancel 161954
+  398  watch squeue -u puzheng
+  399  sbatch 20230320-run_nupack.sh
+  400  watch squeue -u puzheng
+  401  scancel 161959
+  402  watch squeue -u puzheng
+  403  sbatch 20230320-run_nupack.sh
+  404  watch squeue -u puzheng
+  405  sbatch 20230320-run_nupack.sh
+  406  watch squeue -u puzheng
+  407  scancel 162357
+  408  watch squeue -u puzheng
+  409  sbatch 20230320-run_nupack.sh
+  410  watch squeue -u puzheng
+  411  sbatch 20230320-run_nupack.sh
+  412  watch squeue -u puzheng
+  413  sbatch 20230320-run_nupack.sh
+  414  watch squeue -u puzheng
+  415  sbatch 20230320-run_nupack.sh
+  416  watch squeue -u puzheng
+  417  ls
+  418  sbatch 20230321-run_pair_nupack.sh 
+  419  watch squeue -u puzheng
+  420  sbatch 20230321-run_pair_nupack.sh 
+  421  watch squeue -u puzheng
+  422  ls
+  423  cd ..
+  424  ls
+  425  cd MERFISH_Probe/
+  426  ls
+  427  cd RandomSeq_IntBC/
+  428  ls
+  429  cd ..
+  430  cd ~
+  431  ls
+  432  /lab/solexa_weissman/puzheng/
+  433  ls
+  434  cd /lab/solexa_weissman/puzheng/
+  435  ls
+  436  cd MERFISH_Probes/
+  437  ls
+  438  cd PE_TS/
+  439  cd RandomSeqBarcode
+  440  ls
+  441  cd ..
+  442  cd RandomSeqBarcode_new/
+  443  ls
+  444  rm targetPb_*.xlsx
+  445  rm -f targetPb_*.xlsx
+  446  ls
+  447  watch squeue -u puzheng
+  448  cd ~
+  449  ls
+  450  cd S
+  451  cd Scripts/
+  452  ls
+  453  cd Slurm/
+  454  ls
+  455  sbatch 20230320-run_nupack.sh
+  456  watch squeue -u puzheng
+  457  ls
+  458  sbatch 20230321-run_pair_nupack.sh 
+  459  watch squeue -u puzheng
+  460  sbatch 20230321-run_pair_nupack.sh 
+  461  watch squeue -u puzheng
+  462  sbatch 20230321-run_pair_nupack.sh 
+  463  watch squeue -u puzheng
+  464  sbatch 20230321-run_pair_nupack.sh 
+  465  watch squeue -u puzheng
+  466  sbatch 20230321-run_pair_nupack.sh 
+  467  watch squeue -u puzheng
+  468  TEST = 13
+  469  TEST=13
+  470  echo $TEST
+  471  sbatch 20230321-run_pair_nupack.sh 
+  472  watch squeue -u puzheng
+  473  sbatch 20230321-run_pair_nupack.sh 
+  474  watch squeue -u puzheng
+  475  sbatch 20230321-run_pair_nupack.sh 
+  476  watch squeue -u puzheng
+  477  sbatch 20230321-run_pair_nupack.sh 
+  478  watch squeue -u puzheng
+  479  sbatch 20230320-run_nupack.sh 
+  480  watch squeue -u puzheng
+  481  sbatch 20230321-run_pair_nupack.sh 
+  482  watch squeue -u puzheng
+  483  sbatch 20230321-run_pair_nupack.sh 
+  484  watch squeue -u puzheng
+  485  scancel 163734
+  486  watch squeue -u puzheng
+  487  sbatch 20230321-run_pair_nupack.sh 
+  488  watch squeue -u puzheng
+  489  sbatch 20230321-run_pair_nupack.sh 
+  490  watch squeue -u puzheng
+  491  sbatch 20230321-run_pair_nupack.sh 
+  492  watch squeue -u puzheng
+  493  ts
+  494  echo $(date -u)
+  495  watch squeue -u puzheng
+  496  sbatch 20230321-run_pair_nupack.sh 
+  497  watch squeue -u puzheng
+  498  sbatch 20230321-run_pair_nupack.sh 
+  499  watch squeue -u puzheng
+  500  sbatch 20230321-run_pair_nupack.sh 
+  501  watch squeue -u puzheng
+  502  scancel 164137
+  503  sbatch 20230321-run_pair_nupack.sh 
+  504  watch squeue -u puzheng
+  505  cd /lab/weissman_imaging/puzheng
+  506  ls
+  507  cd slurm_reports/
+  508  ls
+  509  cd nupack_jobs/
+  510  ls
+  511  rm *_*.stdout
+  512  rm -f *_*.stdout
+  513  ls
+  514  vim 163620.stdout
+  515  cd ~
+  516  ls
+  517  cd Scripts/
+  518  ls
+  519  cd Slurm/
+  520  ls
+  521  sbatch 20230321-run_pair_nupack.sh 
+  522  watch squeue -u puzheng
+  523  $TEST
+  524  echo TEST
+  525  echo $TEST
+  526  echo $TEST*10
+  527  echo ${TEST*10}
+  528  echo ${TEST}*10}
+  529  echo ${TEST}*10
+  530  ${TEST}*10
+  531  $TEST
+  532  for i in {0..10}; do; echo $i; done
+  533  for i in {0..10}; do echo $i; done
+  534  for i in {0..9}; do echo $i; done
+  535  for i in {0..9}; do echo $i*10; done
+  536  expr 2 '*' $i
+  537  ${expr 2 '*' $i}
+  538  echo ${expr 2 '*' $i}
+  539  echo {expr 2 '*' $i}
+  540  echo expr 2 '*' $i
+  541  expr 2 '*' $i
+  542  ls
+  543  for i in {0..9}; do sleep(expr 2 '*' $i); done
+  544  for i in {0..9}; do j=expr 2 '*' $i; echo $j done
+  545  for i in {0..9}; do j=expr 2 '*' $i; echo $j; done
+  546  for i in {0..9}; do j=expfor (( k = 0; k < 50; ++k )); dor 2 '*' $i; echo $j; done
+  547  donefor (( k = 0; k < 50; ++k )); do
+  548  watch squeue -u puzheng
+  549  sbatch 20230321-run_pair_nupack.sh 
+  550  watch squeue -u puzheng
+  551  scancel 164164
+  552  watch squeue -u puzheng
+  553  scancel 164145
+  554  watch squeue -u puzheng
+  555  sbatch 20230321-run_pair_nupack.sh 
+  556  watch squeue -u puzheng
+  557  ls
+  558  watch squeue -u puzheng
+  559  scancel 161960
+  560  watch squeue -u puzheng
+  561  sbatch 20230321-run_pair_nupack.sh 
+  562  watch squeue -u puzheng
+  563  ls
+  564  srun -p 20 python 20230320-nupack_tube_pair.py 200 10
+  565  ls
+  566  squeue
+  567  squeue -u puzheng
+  568  scancel 164218
+  569  squeue -u puzheng
+  570  sbatch 20230321-run_pair_nupack.sh 
+  571  srun -p 20 python 20230320-nupack_tube_pair.py 200 2
+  572  srun python 20230320-nupack_tube_pair.py 200 2
+  573  sbatch 20230321-run_pair_nupack.sh 
+  574  watch squeue -u puzheng
+  575  scancel 164238
+  576  sbatch 20230321-run_pair_nupack.sh 
+  577  watch squeue -u puzheng
+  578  scancel 164246
+  579  watch squeue -u puzheng
+  580  sbatch 20230321-run_pair_nupack.sh 
+  581  watch squeue -u puzheng
+  582  scancel 164251
+  583  watch squeue -u puzheng
+  584  sbatch 20230321-run_pair_nupack.sh 
+  585  watch squeue -u puzheng
+  586  scancel 164255
+  587  sbatch 20230321-run_pair_nupack.sh 
+  588  scancel 164255
+  589  watch squeue -u puzheng
+  590  scancel 164260
+  591  sbatch 20230321-run_pair_nupack.sh 
+  592  watch squeue -u puzheng
+  593  scancel 164294
+  594  watch squeue -u puzheng
+  595  sbatch 20230321-run_pair_nupack.sh 
+  596  watch squeue -u puzheng
+  597  scancel 164307
+  598  watch squeue -u puzheng
+  599  sbatch 20230321-run_pair_nupack.sh 
+  600  watch squeue -u puzheng
+  601  scancel 164328
+  602  ls
+  603  squeue
+  604  squeue -u puzheng
+  605  scancel 163620
+  606  sbatch 20230321-run_pair_nupack.sh 
+  607  watch squeue -u puzheng
+  608  ls
+  609  sbatch test_run.sh 
+  610  watch squeue -u puzheng
+  611  sbatch test_run.sh 
+  612  watch squeue -u puzheng
+  613  sbatch test_run.sh 
+  614  watch squeue -u puzheng
+  615  sbatch test_run.sh 
+  616  watch squeue -u puzheng
+  617  sbatch test_run.sh 
+  618  watch squeue -u puzheng
+  619  sbatch test_run.sh 
+  620  watch squeue -u puzheng
+  621  sbatch test_run.sh 
+  622  watch squeue -u puzheng
+  623  sbatch test_run.sh 
+  624  watch squeue -u puzheng
+  625  sbatch test_run.sh 
+  626  watch squeue -u puzheng
+  627  sbatch test_run.sh 
+  628  watch squeue -u puzheng
+  629  sbatch test_run.sh 
+  630  watch squeue -u puzheng
+  631  sbatch test_run.sh 
+  632  watch squeue -u puzheng
+  633  sbatch test_run.sh 
+  634  watch squeue -u puzheng
+  635  sbatch test_run.sh 
+  636  watch squeue -u puzheng
+  637  scancel 164336
+  638  watch squeue -u puzheng
+  639  ls
+  640  sbatch 20230321-run_pair_nupack.sh 
+  641  watch squeue -u puzheng
+  642  scancel 164392
+  643  watch squeue -u puzheng
+  644  sbatch 20230321-run_pair_nupack.sh 
+  645  watch squeue -u puzheng
+  646  sbatch 20230321-run_pair_nupack.sh 
+  647  watch squeue -u puzheng
+  648  scancel 164421
+  649  sbatch 20230321-run_pair_nupack.sh 
+  650  scancel 164421
+  651  watch squeue -u puzheng
+  652  scancel 164450
+  653  sbatch 20230321-run_pair_nupack.sh 
+  654  watch squeue -u puzheng
+  655  sbatch 20230321-run_pair_nupack_20.sh 
+  656  watch squeue -u puzheng
+  657  scancel 164487
+  658  scancel 164524
+  659  watch squeue -u puzheng
+  660  sbatch 20230321-run_pair_nupack.sh 
+  661  sbatch 20230321-run_pair_nupack_20.sh 
+  662  watch squeue -u puzheng
+  663  scancel 164600
+  664  scancel 164637
+  665  sbatch 20230321-run_pair_nupack.sh 
+  666  sbatch 20230321-run_pair_nupack_20.sh 
+  667  watch squeue -u puzheng
+  668  squeue -u puzheng
+  669  scancel 164755
+  670  scancel 164718
+  671  squeue -u puzheng
+  672  sbatch 20230321-run_pair_nupack.sh 
+  673  sbatch 20230321-run_pair_nupack_20.sh 
+  674  squeue -u puzheng
+  675  watch squeue -u puzheng
+  676  squeue -u puzheng
+  677  ls
+  678  cd /lab/solexa_weissman/puzheng/
+  679  ls
+  680  cd ..
+  681  cd weissman_imaging/
+  682  cd puzheng/
+  683  ls
+  684  cd slurm_reports/
+  685  ls
+  686  cd nupack_jobs/
+  687  ls
+  688  less 164868_99.stdout
+  689  watch squeue -u puzheng
+  690  squeue -u puzheng
+  691  sbatch 20230321-run_pair_nupack_20.sh 
+  692  squeue -u puzheng
+  693  watch squeue -u puzheng
+  694  scancel 166914
+  695  watch squeue -u puzheng
+  696  squeue -u puzheng
+  697  watch squeue -u puzheng
+  698  squeue -u puzheng
+  699  sbatch 20230321-run_pair_nupack_20.sh 
+  700  watch squeue -u puzheng
+  701  squeue -u puzheng
+  702  squeue
+  703  squeue -u puzheng
+  704  pwd
+  705  ls
+  706  squeue
+  707  exit
+  708  conda activate postanalysis
+  709  pwd
+  710  cd Softwares/
+  711  ls
+  712  cd ..
+  713  ls
+  714  /lab/weissman_imaging/
+  715  ls
+  716  cd /lab/weissman_imaging/
+  717  ls
+  718  cd puzheng/
+  719  ls
+  720  cd Softwares/
+  721  ls
+  722  cd ChromAn/
+  723  ls
+  724  cd src/library_tools/C_Tools/
+  725  ls
+  726  python setup.py  install
+  727  ls
+  728  python setup.py  install
+  729  python
+  730  python setup.py  install
+  731  python
+  732  python 
+  733  cd /lab/weissman_imaging/puzheng/
+  734  ls
+  735  cd Ensembl_references/
+  736  ls
+  737  ls
+  738  sbatch -p weissman --wrap "python 20230329-genome_counTable.py" --mem=100gb -n 13
+  739  squeue
+  740  sbatch -p weissman --wrap "python 20230329-genome_counTable.py" --mem=100gb --account=weissman -n 13
+  741  squeue -u puzheng
+  742  scancel 176998
+  743  squeue -u puzheng
+  744  squeue
+  745  squeue -u puzheng
+  746  squeue
+  747  squeue -u puzheng
+  748  ls
+  749  sbatch 20230329-run_counTable.sh 
+  750  squeue -u puzheng
+  751  sbatch 20230329-run_counTable.sh 
+  752  squeue -u puzheng
+  753  watch squeue -u puzheng
+  754  sbatch 20230329-run_counTable.sh 
+  755  watch squeue -u puzheng
+  756  sbatch 20230329-run_counTable.sh 
+  757  watch squeue -u puzheng
+  758  sbatch 20230329-run_counTable.sh 
+  759  watch squeue -u puzheng
+  760  sbatch 20230329-run_counTable.sh 
+  761  watch squeue -u puzheng
+  762  sbatch 20230329-run_counTable.sh 
+  763  watch squeue -u puzheng
+  764  sbatch 20230329-run_counTable.sh 
+  765  watch squeue -u puzheng
+  766  sbatch 20230329-run_counTable.sh 
+  767  watch squeue -u puzheng
+  768  sbatch 20230329-run_counTable.sh 
+  769  watch squeue -u puzheng
+  770  sbatch 20230329-run_counTable.sh 
+  771  watch squeue -u puzheng
+  772  sbatch 20230329-run_counTable.sh 
+  773  pwd
+  774  squeue -u zheng
+  775  cd /lab/weissman_imaging/puzheng/
+  776  ls
+  777  cd Ensembl_references/
+  778  ls
+  779  cd ..
+  780  ls
+  781  cd slurm_reports/
+  782  ls
+  783  cd counTable/
+  784  ls
+  785  less 180142
+  786  less 180142.stdout 
+  787  less 180143.stdout 
+  788  cd ..
+  789  cd Ensembl_references/
+  790  ls
+  791  mkdir RNA
+  792  cd RNA/
+  793  wget https://ftp.ensembl.org/pub/release-109/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh38.cdna.all.fa.gz
+  794  ls
+  795  tar -h
+  796  tar --help
+  797  ls
+  798  tar -xzf Homo_sapiens.GRCh38.cdna.all.fa.gz
+  799  watch squeue -u puzheng
+  800  exit
+  801  cd /lab/weissman_imaging/puzheng/
+  802  ls
+  803  mkdir PE_LT
+  804  cd PE_LT/
+  805  ls
+  806  scp -h
+  807  ssh pzheng@login.rc.fas.harvard.edu
+  808  ssh pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Lab/Pu/20230403-4T1_zombie_4x .
+  809  scp pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Lab/Pu/20230403-4T1_zombie_4x .
+  810  scp -r pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Lab/Pu/20230403-4T1_zombie_4x .
+  811  ls
+  812  ls -l 
+  813  cd MERFISH_Probes/
+  814  ls
+  815  cd ..
+  816  cd Scripts/
+  817  ls
+  818  cd MERFISH_Probe/
+  819  ls
+  820  cd ..
+  821  ls
+  822  cd /lab/weissman_imaging/puzheng/
+  823  ls
+  824  cd PE_LT/
+  825  ls
+  826  ssh pzheng@login.rc.fas.harvard.edu
+  827  ls
+  828  mkdir 20230405-4T1_zombie_8x_batch2
+  829  cd 20230405-4T1_zombie_8x_batch2/
+  830  ls
+  831  scp -r pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Lab/Pu/20230405-4T1_zombie_8x_batch2/H0C1 /n/holylfs04/LABS/zhuang_lab/Lab/Pu/20230405-4T1_zombie_8x_batch2/H1C2 .
+  832  ls
+  833  cd H0C1/
+  834  ls
+  835  cd ..
+  836  ls
+  837  pwd
+  838  cd /lab/weissman_imaging/puzheng/
+  839  ls
+  840  cd PE_LT/
+  841  ls
+  842  cd 20230405-4T1_zombie_8x_batch2/
+  843  ls
+  844  cd H0C1/
+  845  ls
+  846  cd ..
+  847  pwd
+  848  ssh pzheng@login.rc.fas.harvard.edu
+  849  rsync --ignore-existing -h
+  850  rsync --ignore-existing -r pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Lab/Pu/20230405-4T1_zombie_8x_batch2 .
+  851  cd ..
+  852  rsync --ignore-existing -r pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Lab/Pu/20230405-4T1_zombie_8x_batch2 .
+  853  ls
+  854  cd /lab/weissman_imaging/puzheng/
+  855  ls
+  856  ssh pzheng@login.rc.fas.harvard.edu
+  857  rsync --ignore-existing -r pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Lab/Pu/20230405-4T1_zombie_8x_batch2 .
+  858  rsync --ignore-existing -r pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Lab/Pu/Corrections .
+  859  exit
+  860  virtualenv --help
+  861  rmvirtualenv
+  862  rmvirtualenv my_env
+  863  conda
+  864  conda info --envs
+  865  cond activate merlin_env
+  866  conda activate merlin_env
+  867  merlin
+  868  cd /lab/weissman_imaging/puzheng/Softwares/ChromAn
+  869  pwd
+  870  git pull
+  871  conda deactivate
+  872  conda activate postanalysis
+  873  conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+  874  cd ..
+  875  ls
+  876  mkdir conda
+  877  cd conda
+  878  pwd
+  879  conda config --add pkgs_dirs /lab/weissman_imaging/puzheng/conda/.conda/pkgs
+  880  ls
+  881  mkdir .conda
+  882  cd ..
+  883  conda config --remove pkgs_dirs /lab/weissman_imaging/puzheng/conda/.conda/pkgs
+  884  ls
+  885  rm -r conda
+  886  ls
+  887  mkdir .conda
+  888  cd .conda/
+  889  mkdir env
+  890  mkdir pkgs
+  891  ls
+  892  cd pkgs/
+  893  ls
+  894  pwd
+  895  conda config --add pkgs_dirs /lab/weissman_imaging/puzheng/.conda/pkgs
+  896  ls
+  897  cd ..
+  898  ls
+  899  cd env
+  900  ls
+  901  cd ..
+  902  cd env/
+  903  pwd
+  904  conda config --add envs_dirs /lab/weissman_imaging/puzheng/.conda/env
+  905  conda deactivate
+  906  conda env export -n merlin_env > merlin_env.yaml
+  907  cd ~
+  908  ls
+  909  pwd
+  910  cd .conda
+  911  ls
+  912  cat environments.txt 
+  913  cd ..
+  914  ls
+  915  cd miniconda3/
+  916  cd envs/
+  917  ls
+  918  mv merlin_env/ /lab/weissman_imaging/puzheng/.conda/env
+  919  exit
+  920  ls
+  921  cd /lab/weissman_imaging/Pu
+  922  cd /lab/weissman_imaging/
+  923  ls
+  924  cd puzheng/
+  925  ls
+  926  cd PE_LT/
+  927  ls
+  928  scp -r pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230427-4T1_zombie_Zhuanglab_ns_myprobe .
+  929  pwd
+  930  cd /lab/weissman_imaging/puzheng/
+  931  ls
+  932  cd PE_LT/
+  933  ls
+  934  pwd
+  935  scp -r pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230507-4T1_edits_22k .
+  936  ls
+  937  scp -r pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230513-wtBrain_MO4_MERFISH_s .
+  938  ls
+  939  rsync --ignore-existing --progress pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230513-wtBrain_MO4_MERFISH_s .
+  940  rsync --ignore-existing --progress pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230513-wtBrain_MO4_MERFISH_s/ .
+  941  rsync --ignore-existing --progress pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230513-wtBrain_MO4_MERFISH_s/H14M15 ./20230513-wtBrain_MO4_MERFISH_s/
+  942  rsync --ignore-existing --progress pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230513-wtBrain_MO4_MERFISH_s .
+  943  rsync --ignore-existing --progress pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230513-wtBrain_MO4_MERFISH_s/H14M15 ./20230513-wtBrain_MO4_MERFISH_s/
+  944  rsync --ignore-existing --progress pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230513-wtBrain_MO4_MERFISH_s .
+  945  rsync -R --ignore-existing --progress pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230513-wtBrain_MO4_MERFISH_s .
+  946  rsync -h
+  947  rsync -vr --ignore-existing --progress pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230513-wtBrain_MO4_MERFISH_s .
+  948  cd /lab/weissman_imaging/
+  949  ls
+  950  ls /lab/
+  951  exit
+  952  conda activate postanalysis
+  953  ls
+  954  python
+  955  conda deactivate
+  956  conda env remove -n postanalysis
+  957  yes
+  958  conda activate postanalysis
+  959  conda info --envs
+  960  merlin
+  961  conda activate merlin_env
+  962  merlin
+  963  where merlin
+  964  conda create -n postanalysis python=3.10 numpy scipy matplotlib
+  965  conda activate postanalysis
+  966  conda install scikit-image scikit-learn-intelex jupyter notebook h5py tqdm openpyxl xlrd seaborn
+  967  pip install pyfftw opencv-python
+  968  conda install biopython
+  969  python -m ipykernel install --user --name=postanalysis
+  970  conda install seaborn scikit-learn statsmodels numba pytables
+  971  conda install -c conda-forge python-igraph leidenalg
+  972  conda activate merlin_env
+  973  python
+  974  merlin -h
+  975  ls
+  976  cd /lab/weissman_imaging/
+  977  ls
+  978  cd puzheng/
+  979  cd Softwares/
+  980  ls
+  981  cd ..
+  982  cd ~
+  983  ls
+  984  cd S
+  985  cd Softwares/
+  986  ls
+  987  merlin
+  988  ls
+  989  cd MERlin/
+  990  ls
+  991  git fetch
+  992  git checkout
+  993  cd ..
+  994  pip install -e MERlin/
+  995  pip -h
+  996  conda deactivate
+  997  pip
+  998  which pip
+  999  conda activate merlin_env
+ 1000  pip -h
+ 1001  conda
+ 1002  conda install pip
+ 1003  pip
+ 1004  pip install -e MERlin/
+ 1005  merlin -h
+ 1006  cd ~
+ 1007  cd /lab/weissman_imaging/
+ 1008  dir
+ 1009  cd puzheng/
+ 1010  dir
+ 1011  cd MERFISH_data/
+ 1012  dir
+ 1013  pwd
+ 1014  cd ..
+ 1015  dir
+ 1016  mkdir MERFISH_analysis
+ 1017  cd MERFISH_analysis/
+ 1018  dir
+ 1019  pwd
+ 1020  dir
+ 1021  pwd
+ 1022  cd ..
+ 1023  ls
+ 1024  cd Softwares/
+ 1025  dir
+ 1026  cd Merfish_Analysis_Scripts/
+ 1027  dir
+ 1028  cd ..
+ 1029  dir
+ 1030  cd MERFISH_probe_design/
+ 1031  cd ..
+ 1032  cd Merfish_Analysis_Scripts/
+ 1033  dir
+ 1034  cd merlin_parameters/
+ 1035  dir
+ 1036  pwd
+ 1037  merlin --configure .
+ 1038  pwd
+ 1039  cd ..
+ 1040  dir
+ 1041  cd ~
+ 1042  dir
+ 1043  git clone git@github.com:zhengpuas47/Weissman_MERFISH_Scripts.git
+ 1044  cd Weissman_MERFISH_Scripts/
+ 1045  cd merlin_parameters/
+ 1046  pwd
+ 1047  vim .merlinenv
+ 1048  pwd
+ 1049  cd ..
+ 1050  dir
+ 1051  cd PE_LT/
+ 1052  ls
+ 1053  cd ..
+ 1054  ls
+ 1055  mkdir msBrain
+ 1056  ls
+ 1057  cd PE_LT/
+ 1058  ls
+ 1059  mv 20230513-wtBrain_MO4_MERFISH_s/ ../msBrain/
+ 1060  ls
+ 1061  mv 20230512-msBrain_MO4_MERFISH_s/ ../msBrain/
+ 1062  mv 20230512-msBrain_smFISH_ns/ ../msBrain/
+ 1063  ls
+ 1064  cd ..
+ 1065  ls
+ 1066  cd msBrain/
+ 1067  ls
+ 1068  cd 20230513-wtBrain_MO4_MERFISH_s/
+ 1069  ls
+ 1070  cd ..
+ 1071  ls
+ 1072  cd ..
+ 1073  ls
+ 1074  cd slurm_reports/
+ 1075  ls
+ 1076  mkdir merlin
+ 1077  cd merlin/
+ 1078  mkdir MERLin_Jobs
+ 1079  cd MERLin_Jobs/
+ 1080  pwd
+ 1081  which conda
+ 1082  ls -l /home/puzheng/miniconda3/bin/
+ 1083  conda activate merlin_env
+ 1084  merlin -h
+ 1085  ls
+ 1086  cd ..
+ 1087  conda deactivate
+ 1088  ls
+ 1089  cd /lab/weissman_imaging/puzheng
+ 1090  ls
+ 1091  cd MERFISH_data/
+ 1092  ls
+ 1093  pwd
+ 1094  cd ..
+ 1095  cd MERFISH_analysis/
+ 1096  pwd
+ 1097  ls
+ 1098  cd ..
+ 1099  cd..
+ 1100  cd ..
+ 1101  ls
+ 1102  cd Softwares/
+ 1103  ls
+ 1104  cd Weissman_MERFISH_Scripts/
+ 1105  git add *
+ 1106  git commit -m "update from server"
+ 1107  git push
+ 1108  git pull
+ 1109  git push
+ 1110  ls
+ 1111  cd merlin_parameters/
+ 1112  ls
+ 1113  cd snakemake/
+ 1114  cd ..
+ 1115  pwd
+ 1116  cd ~
+ 1117  ls
+ 1118  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts
+ 1119  git pull
+ 1120  ls
+ 1121  cd Slurm_scripts/
+ 1122  ls
+ 1123  sbatch 20230513-MO4_full_storm6.slurm 
+ 1124  watch squeue
+ 1125  watch squeue -u puzheng
+ 1126  clear
+ 1127  git pull
+ 1128  sbatch 20230513-MO4_full_storm6.slurm 
+ 1129  watch squeue -u puzheng
+ 1130  scancel 256110
+ 1131  watch squeue -u puzheng
+ 1132  conda deactivate
+ 1133  sbatch 20230513-MO4_full_storm6.slurm 
+ 1134  conda
+ 1135  conda -h
+ 1136  conda init
+ 1137  source activate merlin_env
+ 1138  conda deactivate
+ 1139  git pull
+ 1140  sbatch 20230513-MO4_full_storm6.slurm 
+ 1141  merlin -h
+ 1142  source activate merlin_env
+ 1143  merlin -h
+ 1144  which conda
+ 1145  ls /home/puzheng/miniconda3/condabin/conda
+ 1146  ls /home/puzheng/miniconda3/condabin/
+ 1147  sbatch 20230513-MO4_full_storm6.slurm 
+ 1148  conda deactivate
+ 1149  sbatch 20230513-MO4_full_storm6.slurm 
+ 1150  conda activate merlin_env
+ 1151  sbatch 20230513-MO4_full_storm6.slurm 
+ 1152  vim ~/.merlinenv
+ 1153  sbatch 20230513-MO4_full_storm6.slurm 
+ 1154  ls
+ 1155  cd 20230513-wtBrain_MO4/
+ 1156  ls
+ 1157  cd ..
+ 1158  ls
+ 1159  rm -r 20230513-wtBrain_MO4/
+ 1160  conda deactivate
+ 1161  sbatch 20230513-MO4_full_storm6.slurm 
+ 1162  conda activate merlin_env
+ 1163  sbatch 20230513-MO4_full_storm6.slurm 
+ 1164  watch -n 1 squeue
+ 1165  watch -n 1 squeue -u puzheng
+ 1166  scancel 256121
+ 1167  sbatch 20230513-MO4_full_storm6.slurm 
+ 1168  watch -n 1 squeue -u puzheng
+ 1169  ls
+ 1170  git pull
+ 1171  git add *
+ 1172  git commit -m "last commit before first merlin run in WI"
+ 1173  git push
+ 1174  cd ..
+ 1175  cd Weissman_MERFISH_Scripts/
+ 1176  git add *
+ 1177  git commit -m "first run in WI"
+ 1178  git push
+ 1179  watch -n 1 squeue -u puzheng
+ 1180  scancel 256122
+ 1181  cd Slurm_scripts/
+ 1182  ls
+ 1183  sbatch 20230513-MO4_full_storm6.slurm 
+ 1184  watch -n 1 squeue -u puzheng
+ 1185  scancel 256123
+ 1186  sbatch 20230513-MO4_full_storm6.slurm 
+ 1187  scancel 256124
+ 1188  sbatch 20230513-MO4_full_storm6.slurm 
+ 1189  watch -n 1 squeue -u puzheng
+ 1190  scancel 256125
+ 1191  snakemake
+ 1192  python
+ 1193  qsub
+ 1194  slurm
+ 1195  watch -n 1 squeue -u puzheng
+ 1196  scancel 256126
+ 1197  scancel 256125
+ 1198  watch -n 1 squeue -u puzheng
+ 1199  squeue -u $USER | grep 256 | awk '{print $1}'
+ 1200  watch -n 1 squeue -u puzheng
+ 1201  -u $USER | grep 256 | awk '{print $1}' | xargs -n 1 scancel
+ 1202  -u $USER | grep 256 | awk '{print $1}'
+ 1203  squeue -u $USER | grep 256 | awk '{print $1}' | xargs -n 1 scancel
+ 1204  watch -n 1 squeue -u puzheng
+ 1205  ls
+ 1206  sbatch 20230513-MO4_full_storm6.slurm 
+ 1207  watch -n 1 squeue -u puzheng
+ 1208  scancel 256604
+ 1209  watch -n 1 squeue -u puzheng
+ 1210  scancel 256680
+ 1211  sbatch 20230513-MO4_full_storm6.slurm 
+ 1212  watch -n 1 squeue -u puzhen
+ 1213  watch -n 1 squeue -u puzheng
+ 1214  cd ..
+ 1215  dir
+ 1216  watch -n 1 squeue -u puzheng
+ 1217  conda list networkx
+ 1218  squeue -u puzheng
+ 1219  squeue -u $USER | grep 257 | awk '{print $1}'
+ 1220  -u $USER | grep 257 | awk '{print $1}' | xargs -n 1 scancel
+ 1221  squeue -u $USER | grep 257 | awk '{print $1}' | xargs -n 1 scancel
+ 1222  squeue -u puzheng
+ 1223  conda install networkx
+ 1224  ls
+ 1225  python
+ 1226  pwd
+ 1227  conda list networkx
+ 1228  conda uninstall networkx
+ 1229  pip uninstall networkx
+ 1230  conda install networkx
+ 1231  pip install networkx
+ 1232  conda list networkx
+ 1233  dir
+ 1234  cd Weissman_MERFISH_Scripts/
+ 1235  cd Slurm_scripts/
+ 1236  dir
+ 1237  sbatch 20230513-MO4_full_storm6.slurm 
+ 1238  watch -n 1 squeue -u puzheng
+ 1239  conda install six
+ 1240  sbatch 20230513-MO4_full_storm6.slurm 
+ 1241  watch -n 1 squeue -u puzheng
+ 1242  conda install numpy
+ 1243  conda list numpy
+ 1244  conda upgrade google
+ 1245  conda upgrade google-cloud-storage
+ 1246  pip install numpy
+ 1247  pip install google-cloud-storage --upgrade
+ 1248  sbatch 20230513-MO4_full_storm6.slurm 
+ 1249  conda activate postanalysis
+ 1250  python
+ 1251  conda list numpy
+ 1252  conda deactivate
+ 1253  conda install numpy=1.23
+ 1254  sbatch 20230513-MO4_full_storm6.slurm 
+ 1255  watch -n 1 squeue -u puzheng
+ 1256  python
+ 1257  conda list snakemake
+ 1258  conda deactivate
+ 1259  conda create -n merlin_py310 python=3.10
+ 1260  conda activate merlin_py310
+ 1261  conda install h5py rtree pytables
+ 1262  conda install setuptools urllib3
+ 1263  conda install python-dotenv
+ 1264  conda install pandas tifffile 
+ 1265  conda install opencv-python
+ 1266  history
+ 1267  conda install scikit-image scikit-learn scipy matplotlib networkx seaborn pyqt5
+ 1268  conda install scikit-image scikit-learn scipy matplotlib networkx seaborn
+ 1269  conda install Sphinx
+ 1270  conda install sphinx-rtd-theme
+ 1271  conda install pyclustering
+ 1272  conda install pytest pytest-cov
+ 1273  conda install numexpr cython snakemake
+ 1274  conda install numexpr cython requests
+ 1275  conda install Shapely
+ 1276  conda install rtree tables boto3
+ 1277  conda install rtree boto3
+ 1278  conda install xmltodict google-cloud-storage
+ 1279  conda install docutils pillow
+ 1280  conda install -c conda-forge cellpose
+ 1281  pip install opencv-python pyqt5 sphinx-rtd-theme snakemake tables cellpose
+ 1282  ls
+ 1283  cd ..
+ 1284  ls
+ 1285  git clone git@github.com:zhengpuas47/MERlin.git
+ 1286  pip install -e MERlin
+ 1287  pip uninstall scikit-image
+ 1288  cd MERlin
+ 1289  git pull
+ 1290  cd ..
+ 1291  pip install -e MERlin
+ 1292  python
+ 1293  merlin -h
+ 1294  squeue -u puzheng
+ 1295  scancel 257732
+ 1296  scancel 257612
+ 1297  cd Weissman_MERFISH_Scripts/
+ 1298  cd Slurm_scripts/
+ 1299  sbatch 20230513-MO4_full_storm6.slurm 
+ 1300  watch squeue -u puzheng
+ 1301  squeue -u puzheng
+ 1302  scancel 257836
+ 1303  scancel 257830
+ 1304  sbatch 20230513-MO4_full_storm6.slurm 
+ 1305  watch squeue -u puzheng
+ 1306  scancel 258006
+ 1307  cd /lab/weissman_imaging/puzheng/Softwares
+ 1308  cd MERlin/
+ 1309  git pull
+ 1310  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 16 20230513-wtBrain_MO4
+ 1311  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 0 20230513-wtBrain_MO4
+ 1312  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 1 20230513-wtBrain_MO4
+ 1313  salloc --mem 4000
+ 1314  salloc --mem 4000 -p weissman
+ 1315  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 1 20230513-wtBrain_MO4
+ 1316  conda activate merlin_py310
+ 1317  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 1 20230513-wtBrain_MO4
+ 1318  sbatch 20230513-MO4_full_storm6.slurm 
+ 1319  watch squeue -u puzheng
+ 1320  scancel 258484
+ 1321  sbatch 20230513-MO4_full_storm6.slurm 
+ 1322  conda list scikit-image
+ 1323  conda activate merlin_py310
+ 1324  git pull
+ 1325  cd ..
+ 1326  scancel 258785
+ 1327  python
+ 1328  /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/Slurm_scripts$ /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 1 20230513-wtBrain_MO4
+ 1329  ls
+ 1330  python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 1 20230513-wtBrain_MO4
+ 1331  squeue -u puzhen
+ 1332  squeue -u puzheng
+ 1333  scancel 258483
+ 1334  scancel 258979
+ 1335  scancel 258878
+ 1336  scancel 258787
+ 1337  squeue -u puzheng
+ 1338  git pull
+ 1339  cd MERlin/
+ 1340  ls
+ 1341  git pull
+ 1342  sbatch 20230513-MO4_full_storm6.slurm 
+ 1343  exit
+ 1344  squeue -u puzheng
+ 1345  watch squeue -u puzheng
+ 1346  scancel 259106
+ 1347  sbatch 20230513-MO4_full_storm6.slurm 
+ 1348  scancel 259582
+ 1349  watch squeue -u puzheng
+ 1350  sbatch 20230513-MO4_full_storm6.slurm 
+ 1351  watch squeue -u puzheng
+ 1352  scancel 259700
+ 1353  ls
+ 1354  cd ../..
+ 1355  cd MERlin/
+ 1356  git pull
+ 1357  cd ..
+ 1358  cd Weissman_MERFISH_Scripts/Slurm_scripts/
+ 1359  sbatch 20230513-MO4_full_storm6.slurm 
+ 1360  watch squeue -u puzheng
+ 1361  scancel 260001
+ 1362  cd ../..
+ 1363  cd MERlin/
+ 1364  git pull
+ 1365  cd ../Weissman_MERFISH_Scripts/Slurm_scripts/
+ 1366  ls
+ 1367  cat 20230513-MO4_full_storm6.slurm 
+ 1368  squeue -u puzheng
+ 1369  squeue -u $USER | grep 260 | awk '{print $1}' | xargs -n 1 scancel
+ 1370  cd ..
+ 1371  git pull
+ 1372  git add *
+ 1373  git commit -m "update params"
+ 1374  git push
+ 1375  cd Slurm_scripts/
+ 1376  dir
+ 1377  sbatch 20230513-MO4_full_storm6.slurm 
+ 1378  watch squeue -u puzheng
+ 1379  scancel 260354
+ 1380  squeue
+ 1381  squeue -u puzheng
+ 1382  cd ../../MERlin/
+ 1383  git pull
+ 1384  cd ../Weissman_MERFISH_Scripts/Slurm_scripts/
+ 1385  ls
+ 1386  sbatch 20230513-MO4_full_storm6.slurm 
+ 1387  watch squeue -u puzheng
+ 1388  scancel 260530
+ 1389  cd ../../MERlin/
+ 1390  git pull
+ 1391  cd ../Weissman_MERFISH_Scripts/Slurm_scripts/
+ 1392  sbatch 20230513-MO4_full_storm6.slurm 
+ 1393  watch squeue -u puzheng
+ 1394  scancel 260705
+ 1395  watch squeue -u puzheng
+ 1396  scancel 260767
+ 1397  watch squeue -u puzheng
+ 1398  sbatch 20230513-MO4_full_storm6.slurm 
+ 1399  watch squeue -u puzheng
+ 1400  scancel 260881
+ 1401  squeue -u puzheng
+ 1402  scancel 260883
+ 1403  sbatch 20230513-MO4_full_storm6.slurm 
+ 1404  watch squeue -u puzheng
+ 1405  conda list snakemake
+ 1406  watch squeue -u puzheng
+ 1407  squeue -u puzheng
+ 1408  scancel 261230
+ 1409  scancel 261204
+ 1410  ls
+ 1411  pip install --upgrade snakemake
+ 1412  cd ..
+ 1413  git pull
+ 1414  cd Slurm_scripts/
+ 1415  sbatch 20230513-MO4_full_storm6.slurm 
+ 1416  watch squeue -u puzheng
+ 1417  squeue -u puzheng
+ 1418  scancel 261764
+ 1419  scancel 261637
+ 1420  ls
+ 1421  which bash
+ 1422  ls Z:\MERFISH_analysis\20230513-wtBrain_MO4
+ 1423  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4
+ 1424  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 |
+ 1425  history
+ 1426  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 | grep Optimize
+ 1427  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 | grep Optimize | awk '{print $1}'
+ 1428  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 | grep Optimize | awk '{print $1}/tasks/json'
+ 1429  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 | grep Optimize | awk '{print $1 /tasks}'
+ 1430  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 | grep Optimize | awk '{print $1 /tasks/}'
+ 1431  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 | grep Optimize | awk '{print $1 "/tasks/"}'
+ 1432  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 | grep Optimize | awk '{print $1 "tasks/task.json"}'
+ 1433  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 | grep Optimize | awk '{print $1 "tasks/task.json"}' | xargs -n 1 rm
+ 1434  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4 | grep Optimize | awk '{print $2 $1 "tasks/task.json"}' | xargs -n 1 rm
+ 1435  ./reset_optimization_task.sh 
+ 1436  ./reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4
+ 1437  pwd |
+ 1438  pwd
+ 1439  ./reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4
+ 1440  echo pwd
+ 1441  echo $pwd
+ 1442  ./reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4
+ 1443  xargs
+ 1444  ./reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4
+ 1445  ls
+ 1446  git add *
+ 1447  git commit -m 'add shell to reset_optimization_task
+ 1448  '
+ 1449  git push
+ 1450  cd ..
+ 1451  git pull
+ 1452  git push
+ 1453  git pull
+ 1454  cd Slurm_scripts/
+ 1455  ls
+ 1456  sbatch 20230513-MO4_full_storm6.slurm 
+ 1457  scancel 263321
+ 1458  squeue -u puzheng
+ 1459  ls
+ 1460  cd ../..
+ 1461  cd MERlin/
+ 1462  ls
+ 1463  git pull
+ 1464  cd ../Weissman_MERFISH_Scripts/Slurm_scripts/
+ 1465  ls
+ 1466  squeue -u puzheng
+ 1467  scancel 263438
+ 1468  squeue -u puzheng
+ 1469  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4
+ 1470  vim reset_optimization_task.sh 
+ 1471  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230513-wtBrain_MO4
+ 1472  sbatch 20230513-MO4_full_storm6.slurm 
+ 1473  cd ..
+ 1474  git pull
+ 1475  git add *
+ 1476  git commit "remove typo of account"
+ 1477  git commit -n "remove typo of account"
+ 1478  git commit -m "remove typo of account"
+ 1479  git push
+ 1480  ls
+ 1481  cd Slurm_scripts/
+ 1482  ls
+ 1483  watch squeue -u puzheng
+ 1484  salloc --mem 4000 -p 20
+ 1485  pwd
+ 1486  salloc -p weissman -t 0-2:00:00 -n 16 --mem 200000
+ 1487  salloc -p weissman -a weissman -t 0-2:00:00 -n 16 --mem 200000
+ 1488  squeue -u puzheng
+ 1489  scancel 324671
+ 1490  salloc -p weissman -a weissman -t 0-2:00:00 -n 16 --mem 200000 sh
+ 1491  salloc -p weissman -A weissman -t 0-2:00:00 -n 16 --mem 200000 sh
+ 1492  conda activate postanalysis
+ 1493  jupyter notebook password
+ 1494  jupyter notebook --no-browser --port=6819 --ip='0.0.0.0'
+ 1495  cd /lab/weissman_imaging/puzheng/
+ 1496  ls
+ 1497  cd Softwares/
+ 1498  cd Weissman_MERFISH_Scripts/
+ 1499  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/
+ 1500  git pull
+ 1501  cd ..
+ 1502  ls
+ 1503  git clone git@github.com:zhengpuas47/ImageAnalysis3.git
+ 1504  cd ImageAnalysis3/
+ 1505  cd ..
+ 1506  pwd
+ 1507  cd ..
+ 1508  ls
+ 1509  cd PE_LT/
+ 1510  ls
+ 1511  mkdir OldAnalysis
+ 1512  cd OldAnalysis/
+ 1513  mkdir 20230507-4T1_edits_22k
+ 1514  cd 20230507-4T1_edits_22k/
+ 1515  pwd
+ 1516  jupyter notebook --no-browser --port=6819 --ip='0.0.0.0'
+ 1517  salloc -p weissman -A weissman -t 0-2:00:00:00 -n 16 --mem 200000 sh
+ 1518  salloc -p weissman -A weissman -t 0-2-00:00:00 -n 16 --mem 200000 sh
+ 1519  salloc -p weissman -A weissman -t 2-00:00:00 -n 16 --mem 200000 sh
+ 1520  jupyter notebook --no-browser --port=6819 --ip='0.0.0.0'
+ 1521  conda activate postanalysis
+ 1522  cd /tmp
+ 1523  ls
+ 1524  exit
+ 1525  jupyter notebook --no-browser --port=6819 --ip='0.0.0.0'
+ 1526  ls
+ 1527  conda install seaborn scikit-learn statsmodels numba pytables
+ 1528  conda install scikit-learn-intelex
+ 1529  pip install scanpy
+ 1530  cd ..
+ 1531  cd solexa_weissman/
+ 1532  ls
+ 1533  cd puzheng/
+ 1534  ls
+ 1535  cd Sequencing_data/
+ 1536  ls
+ 1537  tar -xf GSE223496_RAW.tar 
+ 1538  ls
+ 1539  gzip -d *.gz -f
+ 1540  ls
+ 1541  wget https://ftp.ncbi.nlm.nih.gov/geo/series/GSE223nnn/GSE223896
+ 1542  ftp ftp.ncbi.nlm.nih.gov/geo/series/GSE223nnn/GSE223896
+ 1543  pwd
+ 1544  ls
+ 1545  tar -xf GSE223896_RAW.tar 
+ 1546  ls
+ 1547  gzip -d *.gz -f
+ 1548  ls
+ 1549  salloc -p weissman -A weissman -t 0-2:00:00 -n 16 --mem 200000
+ 1550  salloc -p weissman -A weissman -t 2-00:00:00 -n 16 --mem 200000 bash
+ 1551  salloc -p weissman -A weissman -t 0-2:00:00 -n 16 --mem 200000 bash
+ 1552  cd /lab/solexa_weissman/puzheng/MERFISH_Probes/4T1_MERFISH/C2/
+ 1553  pwd
+ 1554  ls
+ 1555  cd ..
+ 1556  ls
+ 1557  cd /lab/weissman_imaging/puzheng/
+ 1558  ls
+ 1559  mkdir 4T1Tumor
+ 1560  cd 4T1Tumor/
+ 1561  ls
+ 1562  pwd
+ 1563  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230622-4T1tumor_primary_F133section2 .
+ 1564  vim ~/.ssh/known_hosts 
+ 1565  ssh-keygen -f "/home/puzheng/.ssh/known_hosts" -R "login.rc.fas.harvard.edu"
+ 1566  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230622-4T1tumor_primary_F133section2 .
+ 1567  cd /nfs/BaRC_Public/BaRC_code/shell/run_AlphaFold
+ 1568  ls
+ 1569  cat Commands.txt 
+ 1570  cd /lab/weissman_imaging/puzheng/
+ 1571  ls
+ 1572  cd 4T1Tumor/
+ 1573  ls
+ 1574  pwd
+ 1575  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230623-KPtumor_lung_c2 .
+ 1576  ls
+ 1577  pwd
+ 1578  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230625-4T1cell_c2 /lab/weissman_imaging/puzheng/4T1Tumor
+ 1579  ls
+ 1580  conda info --envs
+ 1581  conda create -n nupack_env python=3.10
+ 1582  conda activate nupack_env
+ 1583  conda install --update-all pip matplotlib jupyterlab
+ 1584  conda install notebook biopython
+ 1585  python3 -m pip install -U nupack -f ~/Downloads/nupack-VERSION/package
+ 1586  ls
+ 1587  cd Softwares/
+ 1588  ls
+ 1589  python3 -m pip install -U nupack -f ~/Softwares/nupack-4.0.1.7/package
+ 1590  pwd
+ 1591  conda install pytest
+ 1592  python3 -m pip show nupack
+ 1593  python3 -m pytest -v --pyargs nupack
+ 1594  python -m ipykernel install --user --name=nupack_py310
+ 1595  history
+ 1596  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230626-4T1cell_Glyoxal_ingel /lab/weissman_imaging/puzheng/PE_LT
+ 1597  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230626-4T1cell_PFA_ingel /lab/weissman_imaging/puzheng/PE_LT
+ 1598  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230628-4T1cell_ingel_Glyoxal_pmsf /lab/weissman_imaging/puzheng/PE_LT
+ 1599  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230628-4T1cell_ingel_PFA_pmsf /lab/weissman_imaging/puzheng/PE_LT
+ 1600  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230630-4T1cell_methanol /lab/weissman_imaging/puzheng/PE_LT
+ 1601  ls
+ 1602  history
+ 1603  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230702-4T1_tso /lab/weissman_imaging/puzheng/PE_LT
+ 1604  ls
+ 1605  history
+ 1606  ls
+ 1607  cd /lab/weissman_imaging/puzheng/PE_LT
+ 1608  ls
+ 1609  eit
+ 1610  exit
+ 1611  cd ..
+ 1612  ls
+ 1613  cd Softwares/
+ 1614  ls
+ 1615  cd Weissman_MERFISH_Scripts/
+ 1616  git add *
+ 1617  git commit -m "new info from cluster"
+ 1618  git push
+ 1619  git pull
+ 1620  git push
+ 1621  git pull
+ 1622  git log
+ 1623  git revert b3848fcd3d7a03414c998a34124e156b8bb791ee
+ 1624  git pull
+ 1625  ls
+ 1626  git commit -m 'test
+ 1627  '
+ 1628  git add *
+ 1629  git commit -m 'test
+ 1630  '
+ 1631  git pull
+ 1632  git push
+ 1633  ls
+ 1634  git reset
+ 1635  git pull
+ 1636  rm Slurm_scripts/20230622-C2_noSegment_storm6.slurm 
+ 1637  git pull
+ 1638  ls
+ 1639  cd ..
+ 1640  ls
+ 1641  rm -r Weissman_MERFISH_Scripts/
+ 1642  ls
+ 1643  rm -r -d Weissman_MERFISH_Scripts/
+ 1644  ls
+ 1645  cd Weissman_MERFISH_Scripts/
+ 1646  ls
+ 1647  cd 
+ 1648  ls
+ 1649  cd /lab/weissman_imaging/puzheng/Softwares
+ 1650  ls
+ 1651  rm -d Weissman_MERFISH_Scripts/
+ 1652  ls
+ 1653  git clone /lab/weissman_imaging/puzheng/Softwares
+ 1654  git clone git@github.com:zhengpuas47/Weissman_MERFISH_Scripts.git
+ 1655  cd Weissman_MERFISH_Scripts/
+ 1656  ls
+ 1657  cd Slurm_scripts/
+ 1658  conda activate merlin_env
+ 1659  ls
+ 1660  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1661  watch squeue -u puzheng
+ 1662  ls
+ 1663  git pull
+ 1664  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1665  watch squeue -u puzheng
+ 1666  scancel 399453
+ 1667  ls
+ 1668  history
+ 1669  ls
+ 1670  cat reset_optimization_task.sh 
+ 1671  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1672  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1673  ls
+ 1674  watch squeue -u puzheng
+ 1675  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1676  watch squeue -u puzheng
+ 1677  squeue
+ 1678  squeue -u puzheng
+ 1679  scancel 407514
+ 1680  squeue -u puzheng
+ 1681  scancel 407517
+ 1682  squeue -u puzheng
+ 1683  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1684  squeue -u puzheng
+ 1685  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1686  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1687  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1688  squeue -u puzheng
+ 1689  scancel 407809
+ 1690  scancel 407615
+ 1691  squeue -u puzheng
+ 1692  scancel 407849
+ 1693  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1694  squeue -u puzheng
+ 1695  scancel 407884
+ 1696  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1697  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1698  squeue -u puzheng
+ 1699  scancel 408112
+ 1700  scancel 408047
+ 1701  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1702  ls
+ 1703  cd ..
+ 1704  ls
+ 1705  git pull
+ 1706  cd Slurm_scripts/
+ 1707  ls
+ 1708  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1709  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1710  squeue -u puzheng
+ 1711  scancel 408234
+ 1712  watch squeue -u puzheng
+ 1713  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1714  ls
+ 1715  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1716  watch squeue -u puzheng
+ 1717  squeue -u puzheng
+ 1718  cd ..
+ 1719  git pull
+ 1720  vim merlin_parameters/slurm/C2_partition_weissman_config.json 
+ 1721  vim merlin_parameters/snakemake/run_C2_cellpose.json 
+ 1722  git pull
+ 1723  vim merlin_parameters/snakemake/run_C2_cellpose.json 
+ 1724  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1725  cd Slurm_scripts/
+ 1726  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1727  squeue -u puzheng
+ 1728  scancel 408414
+ 1729  scancel 408469
+ 1730  scancel 408397
+ 1731  squeue -u puzheng
+ 1732  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1733  squeue -u puzheng
+ 1734  cd ..
+ 1735  git pull
+ 1736  cd ..
+ 1737  cd Weissman_MERFISH_Scripts/
+ 1738  ls
+ 1739  cd Slurm_scripts/
+ 1740  ls
+ 1741  squeue -u puzheng
+ 1742  scancel 408714
+ 1743  scancel 408647
+ 1744  sbatch reset_optimization_task.sh /lab/weissman_imaging/puzheng/MERFISH_analysis/20230622-4T1primary_C2/
+ 1745  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1746  squeue -u puzheng
+ 1747  conda info --envs
+ 1748  conda deactivate
+ 1749  conda activate merlin_py310
+ 1750  ls
+ 1751  python
+ 1752  where merlin
+ 1753  which merlin
+ 1754  merlin -v
+ 1755  merlin -V
+ 1756  merlin -h
+ 1757  conda list merlin
+ 1758  cd ..
+ 1759  ls
+ 1760  cd MER
+ 1761  cd MERlin/
+ 1762  ls
+ 1763  vim README.md 
+ 1764  git pull
+ 1765  git checkout
+ 1766  ls
+ 1767  pip uninstall merlin
+ 1768  ls
+ 1769  cd ..
+ 1770  pip install -e MERlin
+ 1771  ls
+ 1772  cd Weissman_MERFISH_Scripts/
+ 1773  ls
+ 1774  git pull
+ 1775  ls
+ 1776  cd Slurm_scripts/
+ 1777  ls
+ 1778  sbatch 20230622-C2_noSegment_storm6.slurm 
+ 1779  watch squeue -u puzheng
+ 1780  scancel 408842
+ 1781  conda deactivate
+ 1782  conda activate merlin_env
+ 1783  which merlin
+ 1784  pip info merlin
+ 1785  pip show merlin
+ 1786  pip uninstall merlin
+ 1787  cd ..
+ 1788  pip install -e MERlin
+ 1789  python
+ 1790  exit
+ 1791  conda deactivate
+ 1792  ls
+ 1793  squeue -u puzheng
+ 1794  watch squeue -u puzheng
+ 1795  conda activate merlin_py310
+ 1796  pip show merlin
+ 1797  cd MERlin
+ 1798  ls
+ 1799  git pull
+ 1800  dir
+ 1801  cd /lab/weissman_imaging/puzheng/
+ 1802  cd Softwares/
+ 1803  dir
+ 1804  cd ChromAn/
+ 1805  dir
+ 1806  cd .git/
+ 1807  dir
+ 1808  rm index.lock 
+ 1809  cd ..
+ 1810  git pull
+ 1811  git push
+ 1812  git add *
+ 1813  git commit -m 'test'
+ 1814  git push
+ 1815  git pull
+ 1816  git push
+ 1817  git pull
+ 1818  git merge
+ 1819  git commit -m 'test2'
+ 1820  git merge
+ 1821  git push
+ 1822  git pull
+ 1823  history
+ 1824  scp -r -p pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Users/pzheng/20230724-4T1cell_0712_30k_full /lab/weissman_imaging/puzheng/PE_LT
+ 1825  pwd
+ 1826  srun --nodes=1 --cpus-per-task=16 --time 12:00:00 -p weissman -u weissman
+ 1827  srun --nodes=1 --cpus-per-task=16 --time 12:00:00 --partition weissman --account weissman
+ 1828  conda activate postanalysis
+ 1829  srun --nodes=1 --cpus-per-task=16 --time 12:00:00 --partition weissman --account weissman --job-name base-jupyter --pty bash -i
+ 1830  cd /lab/weissman_imaging/
+ 1831  dir
+ 1832  cd puzheng/
+ 1833  dir
+ 1834  cd Softwares/
+ 1835  dir
+ 1836  git clone https://github.com/zhengpuas47/Chromatin_Analysis_Scripts.git
+ 1837  dir
+ 1838  conda activate postanalysis
+ 1839  ls
+ 1840  /lab/weissman_imaging/puzheng/msBrain/20230816-asw016_region_1_MF1msBrainImmune
+ 1841  conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+ 1842  pwd
+ 1843  cd /lab/weissman_imaging/puzheng/Softwares/
+ 1844  dir
+ 1845  cd MERFISH_probe_design/
+ 1846  dir
+ 1847  vim README.md 
+ 1848  pip install .
+ 1849  conda deactivate
+ 1850  conda info --envs
+ 1851  conda activate merlin_py310
+ 1852  dir
+ 1853  cd ..
+ 1854  ls
+ 1855  cd Weissman_MERFISH_Scripts/
+ 1856  cd ..
+ 1857  ls
+ 1858  cd ..
+ 1859  ls
+ 1860  cd MERFISH_data/
+ 1861  ls
+ 1862  cd ..
+ 1863  cd Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/
+ 1864  ls
+ 1865  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 1866  watch squeue
+ 1867  watch squeue -u puzheng
+ 1868  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 1869  watch squeue -u puzheng
+ 1870  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 1871  cd /lab/weissman_imaging/puzheng/
+ 1872  ls
+ 1873  cd Softwares/
+ 1874  ls
+ 1875  cd ..
+ 1876  cd slurm_reports/
+ 1877  ls
+ 1878  cd MERLin_Jobs/
+ 1879  ls
+ 1880  vim 505320.std
+ 1881  vim 505320.stdout
+ 1882  vim 505320.stderr
+ 1883  cd ..
+ 1884  cd MERFISH_analysis/
+ 1885  cd 20230816-ms-Asw016_MF1/
+ 1886  ls
+ 1887  rm Optimize4/tasks/task.json 
+ 1888  rm Optimize5/tasks/task.json 
+ 1889  rm Optimize6/tasks/task.json 
+ 1890  rm -f Optimize7/tasks/task.json 
+ 1891  rm -f Optimize8/tasks/task.json 
+ 1892  rm -f Optimize9/tasks/task.json 
+ 1893  rm -f Optimize10/tasks/task.json 
+ 1894  ls
+ 1895  rm -rf Decode
+ 1896  cd ..
+ 1897  cd puzheng/Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/
+ 1898  ls
+ 1899  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 1900  conda activate merlin_py310
+ 1901  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 1902  cd ../../../MERFISH_analysis/20230816-ms-Asw016_MF1/
+ 1903  ls
+ 1904  rm -f Optimize1/tasks/task.json 
+ 1905  rm -f Optimize2/tasks/task.json 
+ 1906  rm -f Optimize3/tasks/task.json 
+ 1907  rm -f Optimize4/tasks/task.json 
+ 1908  rm -f Optimize5/tasks/task.json 
+ 1909  rm -f Optimize6/tasks/task.json 
+ 1910  rm -f Optimize7/tasks/task.json 
+ 1911  rm -f Optimize8/tasks/task.json 
+ 1912  rm -f Optimize9/tasks/task.json 
+ 1913  rm -f Optimize10/tasks/task.json 
+ 1914  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/Slurm_scripts
+ 1915  ls
+ 1916  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 1917  watch squeue -u puzheng
+ 1918  squeue -u puzheng
+ 1919  scancel 504463
+ 1920  scancel 503645
+ 1921  watch squeue -u puzheng
+ 1922  cd ../../../slurm_reports/MERLin_Jobs/
+ 1923  ls 506473.stderr
+ 1924  cat 506473.stderr
+ 1925  cat 506473.stdout
+ 1926  cat 506473.stdout 
+ 1927  cat 506473.stderr
+ 1928  squeue -u puzheng
+ 1929  scancel 506473
+ 1930  scancel 506392
+ 1931  squeue -u puzheng
+ 1932  cd ..
+ 1933  ls
+ 1934  cd MERFISH_analysis/
+ 1935  ls
+ 1936  cd 20230816-ms-Asw016_MF1/
+ 1937  ls
+ 1938  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks/task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 1939  cd ..
+ 1940  cd 20230816-ms-Asw016_MF1/
+ 1941  rm -rf GenerateMosaic/
+ 1942  ls
+ 1943  cd ..
+ 1944  cd Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/
+ 1945  ls
+ 1946  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 1947  watch squeue -u puzheng
+ 1948  cd ../../..
+ 1949  cd slurm_reports/MERLin_Jobs/
+ 1950  ls 506956
+ 1951  ls 506956.*
+ 1952  ls 506956.stderr 
+ 1953  cat 506956.stderr 
+ 1954  cat 506956.stdout
+ 1955  squeue -u puzheng
+ 1956  cat 506953.stdout
+ 1957  cat 506953.stderr 
+ 1958  scancel 506952
+ 1959  scancel 506953
+ 1960  cd ..
+ 1961  cd MERFISH_analysis/20230816-ms-Asw016_MF1/
+ 1962  ls
+ 1963  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks/task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 1964  ls
+ 1965  cd ..
+ 1966  cd ../Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/
+ 1967  ls
+ 1968  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 1969  watch squeue -u puzheng
+ 1970  cd /lab/weissman_imaging/puzheng/Softwares
+ 1971  ls
+ 1972  cd ..
+ 1973  ls
+ 1974  cd slurm_reports/
+ 1975  cd MERLin_Scheduler/
+ 1976  cd ..
+ 1977  cd MERLin_Jobs/
+ 1978  ls
+ 1979  vim 507273
+ 1980  vim 507273.stderr 
+ 1981  vim 507273.stdout 
+ 1982  vim 507274.stderr
+ 1983  vim 507174.stderr
+ 1984  vim 507174.stdout
+ 1985  vim 507022.stdout
+ 1986  vim 507022.stderr
+ 1987  ls
+ 1988  cd ..
+ 1989  ls
+ 1990  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/Slurm_scripts
+ 1991  ls
+ 1992  conda activate merlin_py310
+ 1993  cd ..
+ 1994  cd slurm_reports/
+ 1995  ls
+ 1996  cd MERLin_Jobs/
+ 1997  cd ..
+ 1998  ls
+ 1999  cd Softwares/
+ 2000  ls
+ 2001  pip install -e MERlin/
+ 2002  conda deactivate
+ 2003  conda activate postanalysis
+ 2004  pip install -e MERlin/
+ 2005  merlin -h
+ 2006  conda deactivate
+ 2007  cd Weissman_MERFISH_Scripts/
+ 2008  cd Slurm_scripts/
+ 2009  conda activate merlin_py310
+ 2010  ls
+ 2011  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 2012  squeue -u puzheng
+ 2013  scancel 507020
+ 2014  squeue -u puzheng
+ 2015  ls
+ 2016  cd slurm_reports/
+ 2017  cd MERLin_Jobs/
+ 2018  ls
+ 2019  cat 509899.stdout 
+ 2020  cat 509899.stderr
+ 2021  cd ..
+ 2022  ls
+ 2023  cd ..
+ 2024  ls
+ 2025  cd PE_LT/
+ 2026  ls
+ 2027  scp -r 20230821-F133section18_PFAfix_dapi-mcherry/ pzheng@login.rc.fas.harvard.edu:/n/holylfs05/LABS/zhuang_lab/Lab/for_Will_20230822
+ 2028  ls
+ 2029  ls
+ 2030  cd ..
+ 2031  ls
+ 2032  cd MERFISH_analysis/
+ 2033  ls
+ 2034  cd 20230816-ms-Asw016_MF1
+ 2035  ls
+ 2036  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks
+ 2037  /task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optim
+ 2038  ize9/tasks/task.json Optimize10/tasks/task.jsonrm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks
+ 2039  /task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 2040  ls
+ 2041  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 2042  watch squeue -u puzheng
+ 2043  squeue -u puzheng
+ 2044  scancel 509295
+ 2045  watch -n 1 squeue -u puzheng
+ 2046  watch squeue -u puzheng
+ 2047  ls
+ 2048  cd ..
+ 2049  ls
+ 2050  cd ..
+ 2051  cd slurm_reports/
+ 2052  ls
+ 2053  cd MERLin_Jobs/
+ 2054  ls 509295
+ 2055  vim 509295.stderr
+ 2056  cat 511451.stderr
+ 2057  cd ..
+ 2058  cd MERFISH_analysis/
+ 2059  cd 20230816-ms-Asw016_MF1
+ 2060  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks
+ 2061  /task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.jsonrm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks/task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 2062  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks/task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 2063  ls
+ 2064  rm -r Optimize10
+ 2065  rm -fr Optimize10
+ 2066  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 2067  watch squeue -u puzheng
+ 2068  scancel 511199
+ 2069  pwd
+ 2070  cd ..
+ 2071  ls
+ 2072  cd PE_LT/
+ 2073  ls
+ 2074  cd ..
+ 2075  ls
+ 2076  cd msBrain/
+ 2077  cd ..
+ 2078  cd 4T1Tumor/
+ 2079  pwd
+ 2080  ls
+ 2081  cd ..
+ 2082  ls
+ 2083  mkdir Data_archives
+ 2084  cd Data_archives/
+ 2085  pwd
+ 2086  cd..
+ 2087  cd ..
+ 2088  ls
+ 2089  cd slurm_reports/
+ 2090  ls
+ 2091  cd MERLin_Jobs/
+ 2092  vim 512038.stderr
+ 2093  rm *.stdout
+ 2094  watch squeue -u puzheng
+ 2095  rm -f *.stdout
+ 2096  cd ..
+ 2097  cd MERFISH_analysis/20230816-ms-Asw016_MF1
+ 2098  ls
+ 2099  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks/task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 2100  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 2101  cd ..
+ 2102  ls
+ 2103  cd 20230816-ms-Asw016_MF1
+ 2104  ls
+ 2105  pwd
+ 2106  ls
+ 2107  cd /lab/weissman_imaging/puzheng/slurm_reports/
+ 2108  ls
+ 2109  cd MERLin_Jobs/
+ 2110  cat 512746.stdout 
+ 2111  cat 512746.stderr
+ 2112  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks/task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 2113  watch squeue -u puzheng
+ 2114  squeue -u puzheng
+ 2115  ls
+ 2116  cd Optimize1
+ 2117  cd tasks/
+ 2118  ls
+ 2119  cd ..
+ 2120  scancel 512479
+ 2121  scancel 512477
+ 2122  ls
+ 2123  sbatch 20230818-MF1_noSegment_merscope01.slurm 
+ 2124  watch squeue -u puzheng
+ 2125  pwd
+ 2126  cd /lab/weissman_imaging/puzheng/Softwares/
+ 2127  ls
+ 2128  conda activate postanalysis
+ 2129  cd MERFISH_probe_design/
+ 2130  ls
+ 2131  cat README.md 
+ 2132  pip install -e .
+ 2133  python
+ 2134  pwd
+ 2135  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2136  pwd
+ 2137  dir
+ 2138  cd ..
+ 2139  ls
+ 2140  cd ..
+ 2141  cd Wafer_test/
+ 2142  cd ..
+ 2143  ls
+ 2144  cd Softwares/
+ 2145  cd Weissman_MERFISH_Scripts/merlin_parameters/
+ 2146  ls
+ 2147  cd ..
+ 2148  cd Slurm_scripts/
+ 2149  ls
+ 2150  cd ..
+ 2151  ls
+ 2152  ls MERlin/.git/index.lock 
+ 2153  rm MERlin/.git/index.lock 
+ 2154  cd MERlin/
+ 2155  ls
+ 2156  git add *
+ 2157  git commit -m "merge"
+ 2158  rm .git/index.lock 
+ 2159  git commit -m "merge"
+ 2160  git push
+ 2161  git pull
+ 2162  cd ..
+ 2163  dir
+ 2164  cd ChromAn/
+ 2165  git push
+ 2166  git pull
+ 2167  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/
+ 2168  ls
+ 2169  cd Slurm_scripts/
+ 2170  ls
+ 2171  cd /lab/weissman_imaging/puzheng/
+ 2172  ls
+ 2173  cd MERFISH_analysis/
+ 2174  ls
+ 2175  cd 20230816-ms-Asw016_MF1
+ 2176  ls
+ 2177  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks/task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 2178  sbatch 20230818-MF1_merscope01.slurm 
+ 2179  watch squeue -u puzheng
+ 2180  conda activate merlin_py310
+ 2181  sbatch 20230818-MF1_merscope01.slurm 
+ 2182  watch squeue -u puzheng
+ 2183  sbatch 20230818-MF1_merscope01.slurm 
+ 2184  pwd
+ 2185  conda install xlsxwriter
+ 2186  cd ..
+ 2187  ls
+ 2188  cd ..
+ 2189  ls
+ 2190  cd puzheng/
+ 2191  ls
+ 2192  cd slurm_reports/
+ 2193  ls
+ 2194  mkdir GPU_jupyter
+ 2195  which conda
+ 2196  ls /home/puzheng/miniconda3/condabin/conda
+ 2197  ls /home/puzheng/miniconda3/condabin/conda.sh
+ 2198  source /home/puzheng/miniconda3/condabin/conda
+ 2199  cd ..
+ 2200  cd Softwares/Weissman_MERFISH_Scripts/
+ 2201  ls
+ 2202  pwd
+ 2203  cd Slurm_scripts/
+ 2204  ls
+ 2205  cd GPU/
+ 2206  ls
+ 2207  sbatch start_GPU_jupyter.slurm 
+ 2208  squeue -u puzheng
+ 2209  scancel 550545
+ 2210  sbatch start_GPU_jupyter.slurm 
+ 2211  catr /home/puzheng/.bashrc
+ 2212  cat /home/puzheng/.bashrc
+ 2213  sbatch start_GPU_jupyter.slurm 
+ 2214  pwd
+ 2215  conda activate postanalysis
+ 2216  python
+ 2217  pwd
+ 2218  conda activate postanalysis
+ 2219  conda list cuda
+ 2220  conda install -c conda-forge ipympl
+ 2221  pip install --upgrade ipympl
+ 2222  conda list jupyter
+ 2223  conda list ipywidgets
+ 2224  jupyter nbextension enable --py widgetsnbextension
+ 2225  watch squeue -u puzheng
+ 2226  ls
+ 2227  vim start_GPU_jupyter.slurm 
+ 2228  sbatch start_GPU_jupyter.slurm 
+ 2229  cd ..
+ 2230  ls
+ 2231  cd ChromAn/
+ 2232  ls
+ 2233  git add *
+ 2234  git commit "update1. slurm related chromatin analysis"
+ 2235  git commit -m "update1. slurm related chromatin analysis"
+ 2236  git push
+ 2237  git pull
+ 2238  which merlin
+ 2239  cd /lab/weissman_imaging/puzheng/.conda/env/postanalysis/bin/merlin
+ 2240  cd /lab/weissman_imaging/puzheng/.conda/env/postanalysis/bin/
+ 2241  ls
+ 2242  cd /lab/weissman_imaging/puzheng/Softwares/ChromAn
+ 2243  ls
+ 2244  cd src/
+ 2245  ls
+ 2246  cd parallel_tools/
+ 2247  ls
+ 2248  python generate_slurm.py -t test -i 1
+ 2249  ls
+ 2250  cat my_job_submit.sh 
+ 2251  python generate_slurm.py -t test -i 1
+ 2252  python generate_slurm.py -t test -i 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash
+ 2253  python generate_slurm.py -t test -i 1 -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash
+ 2254  cat my_job_submit.sh 
+ 2255  python generate_slurm.py -t test -i 1 -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash
+ 2256  cat my_job_submit.sh 
+ 2257  pwd
+ 2258  cd /lab/weissman_imaging/puzheng/slurm_reports/
+ 2259  ls
+ 2260  mkdir ChromAn_Jobs
+ 2261  cd ChromAn_Jobs/
+ 2262  ls
+ 2263  pwd
+ 2264  python generate_slurm.py -t test -i 1 -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash
+ 2265  cat my_job_submit.sh 
+ 2266  python generate_slurm.py -t test -i 1 -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash
+ 2267  cat my_job_submit.sh 
+ 2268  cd ..
+ 2269  ls
+ 2270  python ./analysis/image_preprocess.py 
+ 2271  ls
+ 2272  python chroman.py -t image_preprocess -i 1 -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash
+ 2273  python chroman.py -t image_preprocess -i 1 -a test.pkl -h H0M1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash
+ 2274  python chroman.py -t image_preprocess -i 1 -a test.pkl -f H0M1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash
+ 2275  cat my_job_submit.sh 
+ 2276  python chroman.py -t image_preprocess -i 1 -a test.pkl -f H0M1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash
+ 2277  sbatch my_job_submit.sh 
+ 2278  watch squeue -u puzheng
+ 2279  sbatch my_job_submit.sh 
+ 2280  python
+ 2281  sbatch my_job_submit.sh 
+ 2282  python
+ 2283  cd analysis/
+ 2284  ls
+ 2285  python
+ 2286  sbatch my_job_submit.sh 
+ 2287  cat my_job_submit.sh
+ 2288  cd ..
+ 2289  sbatch my_job_submit.sh 
+ 2290  cat my_job_submit.sh 
+ 2291  sbatch my_job_submit.sh 
+ 2292  python
+ 2293  ls
+ 2294  sbatch my_job_submit.sh 
+ 2295  python
+ 2296  sbatch my_job_submit.sh 
+ 2297  squeue -u puzheng
+ 2298  sbatch my_job_submit.sh 
+ 2299  squeue -u puzheng
+ 2300  sbatch my_job_submit.sh 
+ 2301  squeue -u puzheng
+ 2302  watch squeue -u puzheng
+ 2303  watch squeue -u puzheng
+ 2304  cd ..
+ 2305  cd..
+ 2306  ls
+ 2307  cd ..
+ 2308  ls
+ 2309  cd slurm_reports/
+ 2310  ls
+ 2311  mkdir Jupyter
+ 2312  cd ..
+ 2313  cd Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/Jupyter/
+ 2314  ls
+ 2315  sbatch start_jupyter.slurm 
+ 2316  ls
+ 2317  cd ..
+ 2318  ls
+ 2319  cd ..
+ 2320  ls
+ 2321  cd ..
+ 2322  cd ChromAn/
+ 2323  ls
+ 2324  cd .git/
+ 2325  rm index.lock 
+ 2326  ls
+ 2327  cd ..
+ 2328  cd Weissman_MERFISH_Scripts/
+ 2329  cd Slurm_scripts/
+ 2330  ls
+ 2331  sbatch 20230830-MO4_merscope01.slurm 
+ 2332  watch squeue -u puzheng
+ 2333  sbatch 20230830-MO4_merscope01.slurm 
+ 2334  watch squeue -u puzheng
+ 2335  scancel 559011
+ 2336  ls
+ 2337  conda deactivate
+ 2338  conda activate py310
+ 2339  conda activate merlin_py310
+ 2340  ls
+ 2341  sbatch 20230830-MO4_merscope01.slurm 
+ 2342  watch squeue -u puzheng
+ 2343  scancel 559012
+ 2344  sbatch 20230830-MO4_merscope01.slurm 
+ 2345  watch squeue -u puzheng
+ 2346  sbatch 20230830-MO4_merscope01.slurm 
+ 2347  watch squeue -u puzheng
+ 2348  pwdcd ..
+ 2349  ls
+ 2350  cd ..
+ 2351  ls
+ 2352  cd MERLin_Jobs/
+ 2353  cat 559023.stderr
+ 2354  scancel 559014
+ 2355  watch squeue -u puzheng
+ 2356  scancel 559116
+ 2357  sbatch 20230830-MO4_merscope01.slurm 
+ 2358  cat 559419.stderr
+ 2359  watch squeue -u puzheng
+ 2360  scancel 559416
+ 2361  watch squeue -u puzheng
+ 2362  scancel {559000..559999}
+ 2363  squeue -u puzheng
+ 2364  sbatch 20230830-MO4_merscope01.slurm 
+ 2365  squeue -u puzheng
+ 2366  watch squeue -u puzheng
+ 2367  scancel 559837
+ 2368  cat 559846.stderr 
+ 2369  python
+ 2370  python
+ 2371  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 43 20230830-msTest_MO4
+ 2372  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 42 20230830-msTest_MO4
+ 2373  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 43 20230830-msTest_MO4
+ 2374  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t FiducialCorrelationWarp -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" -i 42 20230830-msTest_MO4
+ 2375  squeue -u puzheng
+ 2376  ls
+ 2377  sbatch 20230830-MO4_merscope01.slurm 
+ 2378  cd ..
+ 2379  ls
+ 2380  cd ..
+ 2381  cd Softwares/ChromAn/
+ 2382  ls
+ 2383  cd src
+ 2384  ls
+ 2385  python chroman.py -h
+ 2386  conda activate postanalysis
+ 2387  python chroman.py -h
+ 2388  python chroman.py -t image_preprocess -f H0M1 -i 1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/
+ 2389  cat my_job_submit.sh 
+ 2390  sbatch my_job_submit.sh 
+ 2391  ls
+ 2392  python chroman.py -t image_preprocess -f H0M1 -i 1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/
+ 2393  sbatch my_job_submit.sh 
+ 2394  cd /lab/weissman_imaging/puzheng/
+ 2395  ls
+ 2396  cd slurm_reports/
+ 2397  ls
+ 2398  cd ChromAn_Jobs/
+ 2399  ls
+ 2400  cat ChromAn_image_preprocess_560658.out
+ 2401  cat ChromAn_image_preprocess_560658.err 
+ 2402  ls /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/H0M1/Conv_zscan_01.hdf5
+ 2403  ls
+ 2404  cd .
+ 2405  cd ..
+ 2406  ls
+ 2407  cd ..
+ 2408  ls
+ 2409  cd Weissman_MERFISH_Scripts/Slurm_scripts/
+ 2410  ls
+ 2411  cd Jupyter/
+ 2412  ls
+ 2413  sbatch start_jupyter.slurm 
+ 2414  cd ..
+ 2415  ls
+ 2416  cd MERLin_Jobs/
+ 2417  cat 560786.stderr 
+ 2418  watch squeue -u puzheng
+ 2419  scancel 560249
+ 2420  cd ..
+ 2421  ls
+ 2422  cd ../..
+ 2423  ls
+ 2424  cd ..
+ 2425  ls
+ 2426  cd slurm_reports/
+ 2427  cd ..
+ 2428  ls
+ 2429  cd MERFISH_analysis/
+ 2430  cd 20230830-msTest_MO4/
+ 2431  ls
+ 2432  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks/task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 2433  ls
+ 2434  sbatch 20230830-MO4_merscope01.slurm 
+ 2435  squeue -u puzheng
+ 2436  scancel {560683..560926}
+ 2437  squeue -u puzheng
+ 2438  scancel {560263..560926}
+ 2439  squeue -u puzheng
+ 2440  scancel {560263..561100}
+ 2441  squeue -u puzheng
+ 2442  cat 561196.stderr
+ 2443  watch squeue -u puzheng
+ 2444  scancel 561195
+ 2445  squeue
+ 2446  squeue -u puzheng
+ 2447  scancel {561195..562000}
+ 2448  squeue -u puzheng
+ 2449  scancel {561000..561193}
+ 2450  squeue -u puzheng
+ 2451  rm -f Optimize1/tasks/task.json Optimize2/tasks/task.json Optimize3/tasks/task.json Optimize4/tasks/task.json Optimize5/tasks/task.json Optimize6/tasks/task.json Optimize7/tasks/task.json Optimize8/tasks/task.json Optimize9/tasks/task.json Optimize10/tasks/task.json
+ 2452  ls
+ 2453  sbatch 20230830-MO4_merscope01.slurm 
+ 2454  squeue -u puzheng
+ 2455  ls
+ 2456  cd ..
+ 2457  ls
+ 2458  cd ..
+ 2459  cd Softwares/ChromAn/
+ 2460  ls
+ 2461  cd src/
+ 2462  ls
+ 2463  python chroman.py -t image_preprocess -f H0M1 -i 1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2464  python chroman.py -t image_preprocess -f H0M1 -i 2 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2465  sbatch test.
+ 2466  sbatch test.sh 
+ 2467  python chroman.py -t image_preprocess -f H0M1 -i 2 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl-d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2468  python chroman.py -t image_preprocess -f H0M1 -i 2 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2469  sbatch test.sh 
+ 2470  watch squeue -u puzheng
+ 2471  watch squeue -u puzheng --start
+ 2472  watch squeue --start -u puzheng 
+ 2473  squeue --start -u puzheng 
+ 2474  squeue --start -u puzheng
+ 2475  squeue -u puzheng
+ 2476  squeue -u puzheng -states=running
+ 2477  squeue -u puzheng --states=running
+ 2478  ls
+ 2479  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2480  cat test.
+ 2481  cat test.sh
+ 2482  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2483  cat test.sh
+ 2484  sbatch test.sh
+ 2485  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2486  sbatch test.sh
+ 2487  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2488  sbatch test.sh
+ 2489  squeue -u puzheng -p weissman
+ 2490  python chroman.py -t image_preprocess -f H0M1 -i 2 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2491  vim test.sh
+ 2492  python chroman.py -t image_preprocess -f H0M1 -i 2 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2493  sbatch test.sh
+ 2494  squeue -u puzheng -p weissman
+ 2495  vim test.sh
+ 2496  python chroman.py -t image_preprocess -f H0M1 -i 2 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2497  vim test.sh
+ 2498  sbatch test.sh
+ 2499  squeue -u puzheng -p weissman
+ 2500  python chroman.py -t image_preprocess -f H0M1 -i 2 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2501  cat test.sh
+ 2502  sbatch test.sh
+ 2503  squeue -u puzheng -p weissman
+ 2504  scancel 562067
+ 2505  ls
+ 2506  squeue -u puzheng -p weissman
+ 2507  squeue -u puzheng
+ 2508  squeue -u puzheng -p weissman
+ 2509  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/ test.sh
+ 2510  sbatch test.sh
+ 2511  squeue -u puzheng -p weissman
+ 2512  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2513  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2514  python chroman.py -t image_preprocess -f H0M1 -c colorusage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2515  ls /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2516  ls /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/Analysis/
+ 2517  python chroman.py -t image_preprocess -f H0M1 -c colorusage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2518  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2519  rm -f _image_preprocess.sh 
+ 2520  rm test.sh
+ 2521  sbatch Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2522  vim Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2523  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2524  sbatch Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2525  watch squeue -u puzheng --states=running
+ 2526  /lab/weissman_imaging/puzheng/.conda/env/postanalysis/bin/python
+ 2527  squeue -u puzheng
+ 2528  cd /lab/weissman_imaging/puzheng/slurm_reports/MERLin_Scheduler/
+ 2529  tail 561596
+ 2530  tail 561596.stdout 
+ 2531  vim 561596.stdout 
+ 2532  tail 561596.stdout 10
+ 2533  tail 561596.stdout 100
+ 2534  tail 561596.stdout n 100
+ 2535  tail 561596.stdout -n 100
+ 2536  cd ,,
+ 2537  cd ..
+ 2538  ks
+ 2539  cd ..
+ 2540  ks
+ 2541  ls
+ 2542  cd MERFISH_analysis/
+ 2543  ls
+ 2544  cd 20230830-msTest_MO4/
+ 2545  ls
+ 2546  cd ExportPartitionedBarcodes/
+ 2547  ls
+ 2548  ls -l
+ 2549  ls
+ 2550  ls
+ 2551  cd ..
+ 2552  ls
+ 2553  cd .
+ 2554  cd ..
+ 2555  ls
+ 2556  cd Weissman_MERFISH_Scripts/
+ 2557  cd Slurm_scripts/Jupyter/
+ 2558  ls
+ 2559  sbatch start_jupyter.slurm 
+ 2560  ls
+ 2561  cd /lab/weissman_imaging/
+ 2562  ls
+ 2563  cd puzheng/Softwares/Weissman_MERFISH_Scripts/
+ 2564  ls
+ 2565  cd ..
+ 2566  cd ChromAn/
+ 2567  ls
+ 2568  cd src/
+ 2569  ls
+ 2570  history
+ 2571  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2572  conda activate postanalysis
+ 2573  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl -d /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2574  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2575  cat Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2576  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -i 1
+ 2577  sbatch Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2578  ls
+ 2579  cd /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/
+ 2580  ls
+ 2581  cat ChromAn_image_preprocess_601418.out 
+ 2582  cat ChromAn_image_preprocess_601418.err
+ 2583  cat ChromAn_image_preprocess_601418.out 
+ 2584  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -i 1
+ 2585  cat Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2586  python chroman.py -h
+ 2587  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -i 1 -g
+ 2588  cat Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2589  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2590  sbatch --nodes=1 --ntasks=1 --open-mode=append --cpus-per-task=1 --job-name=ChromAn_cell_segment --time=3:00:00 --output=/lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/%x_%j.out --error=/lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/%x_%j.err --gres=gpu:1 --partition=sabre --account=weissman --wrap="time 10"
+ 2591  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2592  cat ChromAn_image_preprocess_601418.out ls
+ 2593  ls
+ 2594  cat ChromAn_image_preprocess_601418.out
+ 2595  squeue -u puzheng
+ 2596  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -i 1 -g
+ 2597  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2598  ls
+ 2599  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -g
+ 2600  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2601  watch squeue -u puzheng
+ 2602  scancel 601478
+ 2603  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -g -i 1
+ 2604  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2605  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -i 2 -g
+ 2606  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2607  cat Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2608  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/
+ 2609  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/H0M1/
+ 2610  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/H0M1/
+ 2611  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2612  cat Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2613  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2614  vim Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2615  sbatch Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2616  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2617  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -i 2
+ 2618  sbatch Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2619  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -i 1 -g
+ 2620  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -i 1 -g
+ 2621  cat Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2622  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2623  vim Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2624  sbatch Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2625  ls
+ 2626  cat Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2627  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 2 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -g
+ 2628  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -g
+ 2629  sbatch Glyoxal_GuHCl_PuWash_
+ 2630  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2631  vim Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2632  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2633  scancel 602759
+ 2634  vim Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2635  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2636  vim Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2637  watch squeue -u puzheng
+ 2638  scancel 602799
+ 2639  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_WillWash/ -g
+ 2640  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_WillWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_WillWash/
+ 2641  sbatch Glyoxal_GuHCl_WillWash_image_preprocess.sh 
+ 2642  ls
+ 2643  vim Glyoxal_GuHCl_WillWash_cell_segment.sh 
+ 2644  sbatch Glyoxal_GuHCl_WillWash_cell_segment.sh 
+ 2645  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/
+ 2646  ython chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/
+ 2647  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/
+ 2648  sbatch MEAA_GuHCl_WillWash_image_preprocess.sh 
+ 2649  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/ -g
+ 2650  vim MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2651  sbatch MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2652  ls
+ 2653  squeue -p weissman
+ 2654  cd ..
+ 2655  ls
+ 2656  cd Weissman_MERFISH_Scripts/Slurm_scripts/Jupyter/
+ 2657  ls
+ 2658  sbatch start_GPU_jupyter.slurm 
+ 2659  scancel 603962
+ 2660  vim start_GPU_jupyter.slurm 
+ 2661  sbatch start_GPU_jupyter.slurm 
+ 2662  squeue -u puzheng
+ 2663  sbatch start_jupyter.slurm 
+ 2664  cd ..
+ 2665  ls
+ 2666  cd ..
+ 2667  cd ChromAn/
+ 2668  ls
+ 2669  cd src
+ 2670  ls
+ 2671  vim MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2672  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/ -g
+ 2673  cat MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2674  sbatch MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2675  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/ -g
+ 2676  cat MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2677  sbatch MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2678  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/ -g
+ 2679  sbatch MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2680  cat MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2681  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_WillWash/ -g
+ 2682  sbatch MEAA_GuHCl_WillWash_cell_segment.sh 
+ 2683  ls
+ 2684  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/
+ 2685  ls
+ 2686  cd Slurm_scripts/
+ 2687  ls
+ 2688  cd Jupyter/
+ 2689  ls
+ 2690  sbatch start_jupyter.slurm 
+ 2691  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_PuWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_PuWash/
+ 2692  sbatch MEAA_GuHCl_PuWash_image_preprocess.sh 
+ 2693  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_PuWash/ -g
+ 2694  sbatch MEAA_GuHCl_PuWash_cell_segment.sh 
+ 2695  conda list jupyterhub
+ 2696  scancel  weiss
+ 2697  conda install jupyterhub
+ 2698  scancel 604992
+ 2699  jupyterhub -h
+ 2700  configurable-http-proxy -h
+ 2701  ls
+ 2702  vim start_jupyter.slurm 
+ 2703  sbatch start_jupyter.slurm 
+ 2704  vim start_jupyter.slurm 
+ 2705  sbatch start_jupyter.slurm 
+ 2706  jupyterhub
+ 2707  conda activate postanalysis
+ 2708  jupyterhub
+ 2709  jupyterhub -hls
+ 2710  ls
+ 2711  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/ -g
+ 2712  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_PuWash/
+ 2713  vim Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2714  sbatch Glyoxal_GuHCl_PuWash_image_preprocess.sh 
+ 2715  cd ..
+ 2716  ls
+ 2717  cd ..
+ 2718  cd slurm_reports/ChromAn_Jobs/
+ 2719  cat ChromAn_image_preprocess_607035.err
+ 2720  cat ChromAn_image_preprocess_607035.out
+ 2721  cat ChromAn_image_preprocess_607167.out
+ 2722  cat ChromAn_image_preprocess_607167.err
+ 2723  sbatch Glyoxal_GuHCl_PuWash_cell_segment.sh 
+ 2724  python chroman.py -t cell_segment -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a test.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/Glyoxal_GuHCl_WillWash/ -g
+ 2725  sbatch Glyoxal_GuHCl_WillWash_cell_segment.sh 
+ 2726  ls
+ 2727  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/
+ 2728  ls
+ 2729  cd ..
+ 2730  history
+ 2731  ls /lab/weissman_imaging/puzheng/PE_LT/
+ 2732  ls /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x/
+ 2733  ls /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x/Analysis/
+ 2734  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_PuWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/Softwares$ ls /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x
+ 2735  cd ChromAn/
+ 2736  cd src/
+ 2737  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_PuWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/Softwares$ ls /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x
+ 2738  conda activate postanalysis
+ 2739  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_PuWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/Softwares$ ls /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x
+ 2740  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230828-ingel_test_GuHCl-4T1-v21x-0813/MEAA_GuHCl_PuWash/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x
+ 2741  cat 20230829-zombie-4T1v21x_image_preprocess.sh 
+ 2742  sbatch 20230829-zombie-4T1v21x_image_preprocess.sh 
+ 2743  watch queue -u puzheng
+ 2744  watch squeue -u puzheng
+ 2745  ls
+ 2746  rm -f ChromAn_cell_segment_60*
+ 2747  rm -f ChromAn_image_preprocess_562*
+ 2748  rm -f ChromAn_image_preprocess_603*
+ 2749  ls
+ 2750  cd ..
+ 2751  cd Softwares/
+ 2752  ls
+ 2753  cd Weissman_MERFISH_Scripts/Slurm_scripts/
+ 2754  ls
+ 2755  cd Jupyter/
+ 2756  ls
+ 2757  vim start_jupyter.slurm 
+ 2758  cat start_GPU_jupyter.slurm 
+ 2759  vim start_jupyter.slurm 
+ 2760  sbatch start_GPU_jupyter.slurm 
+ 2761  vim start_GPU_jupyter.slurm 
+ 2762  sbatch start_GPU_jupyter.slurm 
+ 2763  ls
+ 2764  scancel {607485:607552}
+ 2765  scancel {607485..607552}
+ 2766  history
+ 2767  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x/Analysis/imageProcessParam.pkl
+ 2768  python chroman.py -t image_preprocess -f H0M1 -c color_usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x
+ 2769  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x
+ 2770  cat 20230829-zombie-4T1v21x_image_preprocess.sh 
+ 2771  sbatch 20230829-zombie-4T1v21x_image_preprocess.sh 
+ 2772  python chroman.py -t cell_segment -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x
+ 2773  python chroman.py -t image_preprocess -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x -g
+ 2774  cat 20230829-zombie-4T1v21x_image_preprocess.sh 
+ 2775  sbatch 20230829-zombie-4T1v21x_image_preprocess.sh 
+ 2776  scancel {608364..608394}
+ 2777  scancel {608272..608394}
+ 2778  scancel {608403..608394}
+ 2779  scancel {608400..608415}
+ 2780  ls
+ 2781  ls
+ 2782  cat 20230829-zombie-4T1v21x_cell_segment.sh 
+ 2783  scancel {608439..608600}
+ 2784  python chroman.py -t cell_segment -f H0M1 -c Color_Usage.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x/Analysis/imageProcessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20230829-zombie-4T1v21x -g
+ 2785  cat 20230829-zombie-4T1v21x_cell_segment.sh
+ 2786  sbatch 20230829-zombie-4T1v21x_cell_segment.sh
+ 2787  ls /lab/weissman_imaging/puzheng/PE_LT/
+ 2788  ls
+ 2789  cd /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs
+ 2790  rm -f *.out
+ 2791  rm -f *.err
+ 2792  watch squeue -u puzheng
+ 2793  ls
+ 2794  ls
+ 2795  cd ..
+ 2796  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/Jupyter
+ 2797  ls
+ 2798  sbatch start_jupyter.slurm 
+ 2799  cd ..
+ 2800  c d..
+ 2801  cd ..
+ 2802  ls
+ 2803  cd ..
+ 2804  cd Ultima/
+ 2805  ls
+ 2806  cd 026062_First_Wafer/
+ 2807  ls
+ 2808  head 026062-UGAv3-12-UGAv3-12-CTCTGTATTGCAGAT.cram
+ 2809  head 10 026062-UGAv3-12-UGAv3-12-CTCTGTATTGCAGAT.cram
+ 2810  head 20 026062-UGAv3-12-UGAv3-12-CTCTGTATTGCAGAT.cram
+ 2811  tail 20 026062-UGAv3-12-UGAv3-12-CTCTGTATTGCAGAT.cram
+ 2812  ls
+ 2813  scancel 626468
+ 2814  cd ..
+ 2815  ls
+ 2816  cd puzheng/Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/Jupyter/
+ 2817  ls
+ 2818  sbatch start_jupyter.slurm 
+ 2819  ls
+ 2820  cd ..
+ 2821  ls
+ 2822  cd ..
+ 2823  git add *
+ 2824  git commit -m "update examples"
+ 2825  git push
+ 2826  git pull
+ 2827  cd ..
+ 2828  cd ChromAn/
+ 2829  git add *
+ 2830  rm /lab/weissman_imaging/puzheng/Softwares/ChromAn/.git/index.lock
+ 2831  git add *
+ 2832  git commit -m "fix bug in bleed"
+ 2833  git push
+ 2834  git pull
+ 2835  cd ..
+ 2836  cd Weissman_MERFISH_Scripts/
+ 2837  ls
+ 2838  git pull
+ 2839  git push
+ 2840  git status
+ 2841  git commit -a
+ 2842  git add *
+ 2843  git commit -m 'fix"
+ 2844  "
+ 2845  '
+ 2846  git push
+ 2847  git pull
+ 2848  git push
+ 2849  pwd
+ 2850  git checkout
+ 2851  git pull
+ 2852  cd MERFISH_preprocess/Data_organization/
+ 2853  ls
+ 2854  git add *
+ 2855  git commit -m 'fix"
+ 2856  '
+ 2857  ls
+ 2858  cd ..
+ 2859  ls
+ 2860  rm .DS_Store
+ 2861  git commit -m 'fix'
+ 2862  ls
+ 2863  cd ..
+ 2864  ls
+ 2865  ls -ld .git/objects/14
+ 2866  cd .git/objects/14
+ 2867  ls
+ 2868  cd ..
+ 2869  ls
+ 2870  cd ..
+ 2871  ls
+ 2872  conda activate postanalysis
+ 2873  sudo apt-get install libgtk-3-dev
+ 2874  apt-get install libgtk-3-dev
+ 2875  cd /lab/weissman_imaging/puzheng/
+ 2876  lfs -h
+ 2877  df -h
+ 2878  df -h /lab/weissman_imaging
+ 2879  df -h /lab/solexa_weissman/
+ 2880  df -h /lab/weissman_imaging
+ 2881  cd /lab/weissman_imaging/puzheng/
+ 2882  df -h /lab/weissman_imaging
+ 2883  ls
+ 2884  cd MERFISH_data/
+ 2885  ls
+ 2886  cd /lab/weissman_imaging/puzheng/
+ 2887  cd Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/
+ 2888  ls
+ 2889  sbatch 20230928-MF2_merscope01.slurm 
+ 2890  watch squeue -u puzheng 
+ 2891  conda activate merlin_env
+ 2892  conda deactivate
+ 2893  conda activate merlin_py310
+ 2894  ls
+ 2895  sbatch 20230928-MF2_merscope01.slurm 
+ 2896  watch squeue -u puzheng 
+ 2897  watch squeue -u puzheng
+ 2898  watch squeue -u puzheng 
+ 2899  df -h /lab/weissman_imaging
+ 2900  watch squeue -u puzheng 
+ 2901  ls
+ 2902  cd /lab/weissman_imaging/puzheng/MERFISH_analysis/
+ 2903  ls
+ 2904  cd ..
+ 2905  cd MERFISH_data/
+ 2906  ls
+ 2907  conda activate merlin_py310
+ 2908  ls
+ 2909  cd ..
+ 2910  cd Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/
+ 2911  ls
+ 2912  sbatch 20230924-MF1_merscope01.slurm 
+ 2913  cd ..
+ 2914  ls
+ 2915  cd Slurm_scripts/
+ 2916  cd Jupyter/
+ 2917  ls
+ 2918  sbatch start_GPU_jupyter.slurm 
+ 2919  ls
+ 2920  squeue -u puzheng
+ 2921  ls
+ 2922  scancel 643281
+ 2923  ls
+ 2924  cd ..
+ 2925  ls
+ 2926  cd ..
+ 2927  cd Slurm_scripts/
+ 2928  ls
+ 2929  squeue -u puzheng
+ 2930  cd /lab/weissman_imaging/puzheng/
+ 2931  cd MERFISH_analysis/
+ 2932  ls
+ 2933  rm -r 20230928-4T1F170_MF2/
+ 2934  rm -rf 20230928-4T1F170_MF2/
+ 2935  sbatch 20230928-MF2_merscope01.slurm 
+ 2936  cd ..
+ 2937  ls
+ 2938  cd slurm_reports/
+ 2939  ls
+ 2940  cd MERLin_Scheduler/
+ 2941  ls
+ 2942  cat 650774.stdout 
+ 2943  tail 650774.stdout 
+ 2944  watch tail 650774.stdout 
+ 2945  watch tail 650774.stdout -n 30
+ 2946  ls
+ 2947  cd ..
+ 2948  ls
+ 2949  cd MERFISH_data/
+ 2950  ls
+ 2951  rm -rf 20230928-4T1F170_MF2/
+ 2952  ls
+ 2953  df -h
+ 2954  df -h /lab/weissman_imaging/
+ 2955  cd ..
+ 2956  git add *
+ 2957  git commit -m "update examples 20231009"
+ 2958  git push
+ 2959  git pull
+ 2960  git commit
+ 2961  git push
+ 2962  git pull
+ 2963  git commit
+ 2964  git pull
+ 2965  git push
+ 2966  git pull
+ 2967  ls
+ 2968  ls
+ 2969  cd Slurm_scripts/
+ 2970  ls
+ 2971  sbatch 20231004-MF2_merscope01.slurm 
+ 2972  cd ..
+ 2973  ls
+ 2974  cd Softwares/
+ 2975  cd ..
+ 2976  cd slurm_reports/
+ 2977  ls
+ 2978  cd MERLin_Scheduler/
+ 2979  ls
+ 2980  watch tail 650774.stdout -n 20
+ 2981  ls
+ 2982  watch tail 659645.stdout -n 20
+ 2983  watch squeue -u puzheng
+ 2984  watch tail 659646.stdout -n 20
+ 2985  watch tail 659647.stdout -n 20
+ 2986  watch tail 659647.stdout -n 100
+ 2987  cd ..
+ 2988  cd MERLin_Jobs/
+ 2989  ls 659957.stderr
+ 2990  cat 659957.stderr
+ 2991  cat 659957.stdout 
+ 2992  scancel 659647
+ 2993  squeue -u $USER | awk '{print $1}' | tail -n+2 | xargs scancel
+ 2994  watch squeue -u puzheng
+ 2995  sbatch 20231004-MF2_merscope01.slurm 
+ 2996  scancel 659647
+ 2997  cat 659957.stdout 
+ 2998  cat 659957.stderr
+ 2999  squeue -u $USER | awk '{print $1}' | tail -n+2 | xargs scancel
+ 3000  watch squeue -u puzheng
+ 3001  sbatch 20231004-MF2_merscope01.slurm 
+ 3002  cd ..
+ 3003  cd MERLin_Scheduler/
+ 3004  ls
+ 3005  watch squeue -u puzheng
+ 3006  watch tail 660851.stdout -n 100
+ 3007  ls
+ 3008  vim .merlinenv 
+ 3009  python -v
+ 3010  python
+ 3011  cd ..
+ 3012  cd solexa_weissman/
+ 3013  ls
+ 3014  cd puzheng/
+ 3015  ls
+ 3016  cd References/
+ 3017  ls
+ 3018  mkdir Merfish_readout_reference
+ 3019  cd Merfish_readout_reference/
+ 3020  ls
+ 3021  scp pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Users/pzheng/readout_table_v2_corrected.xls .
+ 3022  scp pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Users/pzheng/readout_table_v2.xls .
+ 3023  less /lab/solexa_weissman/puzheng/References/GRCm39/Transcriptome/Mus_musculus.GRCm39.cdna.all.fa
+ 3024  cd ..
+ 3025  ls
+ 3026  cd ..
+ 3027  ls
+ 3028  cd ..
+ 3029  cd weissman_imaging/puzheng/
+ 3030  ls
+ 3031  cd Softwares/ChromAn/
+ 3032  ls
+ 3033  cd src
+ 3034  ls
+ 3035  cd ..
+ 3036  cd examples/
+ 3037  ls
+ 3038  cat Example_preprocess.sh 
+ 3039  cd ..
+ 3040  cd examples/
+ 3041  ls
+ 3042  python ../src/chroman.py -t image_preprocess -f H0M1 -c color_usage_v2.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/Analysis/H0_preprocessParam.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low
+ 3043  vim 20230901-zombie_4T1preEditTop8_low_image_preprocess.sh 
+ 3044  sbatch 20230901-zombie_4T1preEditTop8_low_image_preprocess.sh 
+ 3045  vim 20230901-zombie_4T1preEditTop8_low_image_preprocess.sh 
+ 3046  cd ..
+ 3047  cd src
+ 3048  ls
+ 3049  python chroman.py -t image_preprocess -f H0M1 -c color_usage_v2.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/Analysis/H0_preprocessParam.pkl --nodes 1 /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low
+ 3050  sbatch 20230901-zombie_4T1preEditTop8_low_image_preprocess.sh 
+ 3051  vim 20230901-zombie_4T1preEditTop8_low_image_preprocess.sh 
+ 3052  sbatch -h
+ 3053  python chroman.py -t image_preprocess -f H0M1 -c color_usage_v2.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low
+ 3054  vim 20230901-zombie_4T1preEditTop8_low_image_preprocess.sh 
+ 3055  sbatch 20230901-zombie_4T1preEditTop8_low_image_preprocess.sh 
+ 3056  ls ../examples/Example_preprocess.sh 
+ 3057  cat ../examples/Example_preprocess.sh 
+ 3058  pwd
+ 3059  python chroman.py -t cell_segment -f H0M1 -c color_usage_v2.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20230901-zombie_4T1preEditTop8_low
+ 3060  vim 20230901-zombie_4T1preEditTop8_low_cell_segment.sh 
+ 3061  sbatch 20230901-zombie_4T1preEditTop8_low_cell_segment.sh 
+ 3062  python chroman.py -t image_preprocess -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_1day/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_1day/
+ 3063  vim 37c_1day_image_preprocess.sh 
+ 3064  sbatch 37c_1day_image_preprocess.sh 
+ 3065  vim 37c_1day_image_preprocess.sh 
+ 3066  watch squeue -u puzheng
+ 3067  watch squeue -u puzheng -P
+ 3068  python chroman.py -t image_preprocess -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_1day/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_2day/
+ 3069  sbatch 37c_2day_image_preprocess.sh 
+ 3070  python chroman.py -t image_preprocess -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_1day/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_2day/
+ 3071  python chroman.py -t image_preprocess -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_1day/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_1day/
+ 3072  python chroman.py -t image_preprocess -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_1day/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_2day/
+ 3073  sbatch 47c_1day_image_preprocess.sh 
+ 3074  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_1day/
+ 3075  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_2day/
+ 3076  ls
+ 3077  sbatch 37c_1day_cell_segment.sh 
+ 3078  vim 37c_2day_cell_segment.sh 
+ 3079  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_2day/
+ 3080  vim 37c_2day_cell_segment.sh 
+ 3081  sbatch 37c_2day_cell_segment.sh 
+ 3082  sbatch 47c_2day_image_preprocess.sh 
+ 3083  squeue -u puzheng -P
+ 3084  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_1day/
+ 3085  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_2day/
+ 3086  watch squeue -u puzheng -P
+ 3087  squeue -u puzheng -P
+ 3088  vim 37c_2day_cell_segment.sh 
+ 3089  vim 47c_1day_cell_segment.sh 
+ 3090  watch squeue -u puzheng -P
+ 3091  squeue -u puzheng -P
+ 3092  watch squeue -u puzheng -P
+ 3093  squeue -u puzheng -P
+ 3094  python chroman.py -t image_preprocess -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_1day/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_1day/
+ 3095  python chroman.py -t image_preprocess -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_1day/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_2day/
+ 3096  sbatch 47c_1day_image_preprocess.sh 
+ 3097  sbatch 47c_2day_image_preprocess.sh 
+ 3098  watch squeue -u puzheng -P
+ 3099  squeue -u puzheng -P
+ 3100  watch squeue -u puzheng -P
+ 3101  squeue -u puzheng -P
+ 3102  sbatch 47c_1day_image_preprocess.sh 
+ 3103  sbatch 47c_2day_image_preprocess.sh 
+ 3104  watch squeue -u puzheng -P
+ 3105  squeue -u puzheng -P
+ 3106  watch squeue -u puzheng -P
+ 3107  squeue -u puzheng -P
+ 3108  watch squeue -u puzheng -P
+ 3109  squeue -u puzheng -P
+ 3110  watch squeue -u puzheng -P
+ 3111  squeue -u puzheng -P
+ 3112  watch squeue -u puzheng -P
+ 3113  squeue -u puzheng -P
+ 3114  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_1day/
+ 3115  vim 47c_1day_cell_segment.sh 
+ 3116  vim 47c_2day_cell_segment.sh 
+ 3117  sbatch 47c_1day_cell_segment.sh 
+ 3118  sbatch 47c_2day_cell_segment.sh 
+ 3119  watch squeue -u puzheng -P
+ 3120  squeue -u puzheng -P
+ 3121  watch squeue -u puzheng
+ 3122  squeue -u puzheng
+ 3123  cd src
+ 3124  history
+ 3125  squeue -u puzheng
+ 3126  ls
+ 3127  conda activate postanalysis
+ 3128  sbatch 37c_2day_image_preprocess.sh
+ 3129  watch squeue -u puzheng
+ 3130  squeue -u puzheng
+ 3131  scancel {682300..682323}
+ 3132  squeue -u puzheng
+ 3133  scancel 683830
+ 3134  sbatch 47c_1day_cell_segment.sh 
+ 3135  squeue -u puzheng
+ 3136  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_1day/
+ 3137  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_2day/
+ 3138  im 47c_1day_cell_segment.sh 
+ 3139  vim 47c_1day_cell_segment.sh 
+ 3140  sbatch 47c_1day_cell_segment.sh 
+ 3141  sbatch 47c_2day_cell_segment.sh 
+ 3142  squeue -u puzheng
+ 3143  scancel 684329
+ 3144  squeue -u puzheng
+ 3145  watch squeue -u puzheng
+ 3146  squeue
+ 3147  squeue -u puzheng
+ 3148  watch squeue -u puzheng
+ 3149  squeue -u puzheng
+ 3150  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_1day/
+ 3151  sbatch 47c_1day_cell_segment.sh 
+ 3152  watch squeue -u puzheng
+ 3153  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/47c_1day/
+ 3154  im 47c_1day_cell_segment.sh 
+ 3155  vim 47c_1day_cell_segment.sh 
+ 3156  sbatch 47c_1day_cell_segment.sh 
+ 3157  watch squeue -u puzheng
+ 3158  scancel 684343
+ 3159  watch squeue -u puzheng
+ 3160  vim 37c_2day_cell_segment.sh 
+ 3161  sbatch 37c_2day_cell_segment.sh 
+ 3162  watch squeue -u puzheng
+ 3163  squeue -u puzheng
+ 3164  scancel 684331
+ 3165  scancel 684330
+ 3166  scancel 684596
+ 3167  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_2day/
+ 3168  vim 37c_2day_cell_segment.sh
+ 3169  sbatch 37c_2day_cell_segment.sh
+ 3170  vim 37c_2day_cell_segment.sh
+ 3171  python chroman.py -t cell_segment -f H0M1 -c color_usage_clearing.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/Analysis/H0_preprocessParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231012-4T1v21x_50k0927_digestion_test/37c_2day/
+ 3172  sbatch 37c_2day_cell_segment.sh
+ 3173  watch squeue -u puzheng
+ 3174  squeue -u puzheng
+ 3175  watch squeue -u puzheng
+ 3176  squeue -u puzheng
+ 3177  watch squeue -u puzheng -P
+ 3178  cat /lab/weissman_imaging/kyost/MERFISH_data/slurm-685065.out
+ 3179  ls
+ 3180  cd /lab/weissman_imaging/puzheng/Softwares/
+ 3181  ls
+ 3182  cd MERlin
+ 3183  ls
+ 3184  git commit -m "fix bug in optimize"
+ 3185  git push
+ 3186  git pull
+ 3187  watch squeue -u puzheng
+ 3188  ls
+ 3189  vim 47c_2day_cell_segment.sh 
+ 3190  ls
+ 3191  python chroman.py -t image_preprocess -f H0M1 -c color_usage_fixation.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/MeAA/
+ 3192  vim MeAA_image_preprocess.sh 
+ 3193  sbatch MeAA_image_preprocess.sh 
+ 3194  python chroman.py -t image_preprocess -f H0M1 -c color_usage_fixation.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/MeAA_PFA/
+ 3195  sbatch MeAA_PFA_image_preprocess.sh 
+ 3196  python chroman.py -t image_preprocess -f H0M1 -c color_usage_fixation.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/Glyoxal/
+ 3197  python chroman.py -t image_preprocess -f H0M1 -c color_usage_fixation.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/Analysis/H0_preprocessParam.pkl --nodes 1 --memory 20gb /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/PFA/
+ 3198  sbatch Glyoxal_image_preprocess.sh 
+ 3199  sbatch PFA_image_preprocess.sh 
+ 3200  watch squeue -u puzheng
+ 3201  ls
+ 3202  cd ..
+ 3203  ls
+ 3204  cd Weissman_MERFISH_Scripts/
+ 3205  ls
+ 3206  cd Slurm_scripts/
+ 3207  ls
+ 3208  cd Jupyter/
+ 3209  ls
+ 3210  sbatch start_GPU_jupyter.slurm 
+ 3211  ls /lab/weissman_imaging/puzheng/slurm_reports/GPU_jupyter/694210.stdout
+ 3212  cat /lab/weissman_imaging/puzheng/slurm_reports/GPU_jupyter/694210.stdout
+ 3213  python chroman.py -t cell_segment -f H0M1 -c color_usage_fixation.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/MeAA/Analysis/H0_CellposeParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/MeAA
+ 3214  vim MeAA_cell_segment.sh 
+ 3215  sbatch MeAA_cell_segment.sh 
+ 3216  python chroman.py -t cell_segment -f H0M1 -c color_usage_fixation.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/MeAA/Analysis/H0_CellposeParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/MeAA_PFA
+ 3217  sbatch MeAA_PFA_cell_segment.sh 
+ 3218  python chroman.py -t cell_segment -f H0M1 -c color_usage_fixation.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/MeAA/Analysis/H0_CellposeParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/PFA
+ 3219  python chroman.py -t cell_segment -f H0M1 -c color_usage_fixation.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/MeAA/Analysis/H0_CellposeParam.pkl --memory 12gb -g /lab/weissman_imaging/puzheng/PE_LT/20231010-4T1v21x-50k0920_fixation_test/Glyoxal
+ 3220  sbatch Glyoxal_cell_segment.sh 
+ 3221  sbatch PFA_cell_segment.sh 
+ 3222  watch squeue -u puzheng
+ 3223  ls
+ 3224  squeue -u puzheng
+ 3225  pwd
+ 3226  cd /lab/weissman_imaging/puzheng/
+ 3227  ls
+ 3228  cd Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/
+ 3229  ls
+ 3230  sbatch ./Jupyter/start_GPU_jupyter.slurm 
+ 3231  cd /lab/weissman_imaging/puzheng/Softwares/ChromAn/
+ 3232  ls
+ 3233  conda env export
+ 3234  conda activate merlin_py310
+ 3235  conda env export
+ 3236  cd ..
+ 3237  ls
+ 3238  cd Weissman_MERFISH_Scripts/
+ 3239  ls
+ 3240  mkdir Conda_env
+ 3241  cd Conda_env/
+ 3242  ls
+ 3243  pwd
+ 3244  conda env export > merlin_py310.yml
+ 3245  pwd
+ 3246  /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/Conda_env
+ 3247  ls /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/Conda_env
+ 3248  ls /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/Conda_env/merlin_py310.yml 
+ 3249  cd /nfs/WIGTC/pub/MISEQ_DATA
+ 3250  ls
+ 3251  cp /lab/weissman_imaging/puzheng/SampleSheet_231027_4T1_kinetics_24mer_arrays.csv .
+ 3252  ls
+ 3253  mv SampleSheet_231027_4T1_kinetics_24mer_arrays.csv SampleSheet_231027_MerfishPool.csv 
+ 3254  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/
+ 3255  git add *
+ 3256  git commit -m 'update before sync 1030'
+ 3257  git push
+ 3258  cd ..
+ 3259  cp -r Weissman_MERFISH_Scripts/ /lab/solexa_weissman/puzheng/
+ 3260  cp -r /lab/weissman_imaging/puzheng/PE_LT/20230913-4T1top8_preEdit_400k0907/Analysis /lab/solexa_weissman/puzheng/PE_LT/Analysis/0913_top8/
+ 3261  cd /lab/solexa_weissman/puzheng/PE_LT/Analysis/0913_top8/
+ 3262  ls
+ 3263  cd Analysis/
+ 3264  ls
+ 3265  ls -l
+ 3266  rm Conv_zscan_025.hdf5 
+ 3267  ls
+ 3268  ls -l
+ 3269  cd ..
+ 3270  ls
+ 3271  cp -r /lab/weissman_imaging/puzheng/Corrections/20230902-Merscope01_s30_n500/ /lab/solexa_weissman/puzheng/PE_LT/Analysis/0913_top8/
+ 3272  ls
+ 3273  cd 20230902-Merscope01_s30_n500/
+ 3274  ls
+ 3275  cd ..
+ 3276  ls
+ 3277  cd ..
+ 3278  ls
+ 3279  cd ..
+ 3280  ls
+ 3281  cd ..
+ 3282  ls
+ 3283  git clone git@github.com:zhengpuas47/ChromAn.git
+ 3284  which python
+ 3285  conda list --envs
+ 3286  conda info --envs
+ 3287  cd /home/
+ 3288  cd /home/puzheng/
+ 3289  ls
+ 3290  ls -l
+ 3291  cd Scripts/
+ 3292  ls
+ 3293  ls -l
+ 3294  cd PE_LT/
+ 3295  ls
+ 3296  cd 120nt_old/
+ 3297  ls
+ 3298  cd ..
+ 3299  cd Slurm/
+ 3300  ls
+ 3301  cd ..
+ 3302  ls
+ 3303  cd Softwares/
+ 3304  ls
+ 3305  cd blah/
+ 3306  ls
+ 3307  cd 0
+ 3308  ls
+ 3309  cat final.json 
+ 3310  ls
+ 3311  cd ..
+ 3312  ls
+ 3313  cd ..
+ 3314  ls
+ 3315  rm -r blah/
+ 3316  rm -rf blah/
+ 3317  ls
+ 3318  ls -l
+ 3319  cd ..
+ 3320  ls
+ 3321  conda info --envs
+ 3322  cd .conda
+ 3323  ls
+ 3324  cat environments.txt 
+ 3325  cd /nfs/WIGTC/pub/MISEQ_DATA
+ 3326  ls
+ 3327  cd 231027_M01799_0468_000000000-GJGR9/
+ 3328  ls
+ 3329  cd Config/
+ 3330  ls
+ 3331  cd ..
+ 3332  cd Data/
+ 3333  ls
+ 3334  cd ..
+ 3335  ls
+ 3336  cd ..
+ 3337  ls
+ 3338  cd Fastq/
+ 3339  ls
+ 3340  ls -l
+ 3341  cd ..
+ 3342  ls
+ 3343  ls -l
+ 3344  cd /lab/solexa_weissman/kyost/
+ 3345  ls
+ 3346  cd pe_lineage/
+ 3347  ls
+ 3348  df -h 
+ 3349  cd /nfs/WIGTC/pub/MISEQ_DATA
+ 3350  ls
+ 3351  cd 231027_M01799_0469_000000000-L5YYM/
+ 3352  ls
+ 3353  cd ..
+ 3354  cp -r 231027_M01799_0469_000000000-L5YYM/ /lab/solexa_weissman/puzheng/Sequencing_data/
+ 3355  cd /lab/solexa_weissman/puzheng/Sequencing_data/231027_M01799_0469_000000000-L5YYM/
+ 3356  bowtie2
+ 3357  ls
+ 3358  cd ..
+ 3359  ls
+ 3360  cd 231027_M01799_0469_000000000-L5YYM/
+ 3361  ls
+ 3362  mkdir Analysis
+ 3363  cd Analysis/
+ 3364  cp /lab/solexa_weissman/puzheng/MERFISH_Probes/Brain_MS_immune/MF1-msBrain/2023_7_5_twist_merged_probes.xlsx MF1_twist_probes.xlsx
+ 3365  ls
+ 3366  cp /lab/solexa_weissman/puzheng/MERFISH_Probes/4T1_MERFISH/MF2_4T1Primary/mf2_mf3_probe.xlsx MF2-3_twist_probes.xlsx
+ 3367  head MF2-3_twist_probes.xlsx 
+ 3368  vim MF1_twist_probes.xlsx 
+ 3369  ls
+ 3370  ls -l
+ 3371  bowtie2-build -f -c MF1-3.fasta bt2Idx_MF1-3
+ 3372  ls -l
+ 3373  bowtie2-build -f MF1-3.fasta bt2Idx_MF1-3
+ 3374  ls -l
+ 3375  cd ..
+ 3376  cd 20231028_082558/
+ 3377  ls
+ 3378  cd Fastq/
+ 3379  bowtie2 -x ../../Analysis/bt2Idx_MF1-3 -U *.fq.gz -S *.sam
+ 3380  ls
+ 3381  ls /lab/solexa_weissman/puzheng/Sequencing_data/231027_M01799_0469_000000000-L5YYM/20231028_082558/Fastq
+ 3382  bowtie2 -x ../../Analysis/bt2Idx_MF1-3 -U *.fastq.gz -S *.sam
+ 3383  ls
+ 3384  rm \*.sam 
+ 3385  ls -l
+ 3386  vim submit_bowtie2.slurm
+ 3387  sbatch submit_bowtie2.slurm 
+ 3388  mkdir /lab/solexa_weissman/puzheng/slurm_reports/bowtie2
+ 3389  mkdir /lab/solexa_weissman/puzheng/slurm_reports/
+ 3390  mkdir /lab/solexa_weissman/puzheng/slurm_reports/bowtie2
+ 3391  vim submit_bowtie2.slurm 
+ 3392  squeue -u puzheng
+ 3393  ls
+ 3394  vim submit_bowtie2.slurm 
+ 3395  ls -l *.sam
+ 3396  ls -l *.fastq.gz
+ 3397  ls -l *.sam
+ 3398  squeue -u puzheng
+ 3399  ls
+ 3400  ls -l
+ 3401  ls -l
+ 3402  ls /lab/solexa_weissman/puzheng/Sequencing_data/231027_M01799_0469_000000000-L5YYM/20231028_082558/Fastq
+ 3403  df -h 
+ 3404  df -h /lab/weissman_imaging/
+ 3405  ls
+ 3406  pwd
+ 3407  squeue -u puzheng
+ 3408  ls /lab/solexa_weissman/puzheng/Sequencing_data/231027_M01799_0469_000000000-L5YYM/20231028_082558/Fastq
+ 3409  ls /lab/solexa_weissman/puzheng/Sequencing_data/231027_M01799_0469_000000000-L5YYM/20231028_082558/Fastq/*.sam
+ 3410  ls -l /lab/solexa_weissman/puzheng/Sequencing_data/231027_M01799_0469_000000000-L5YYM/20231028_082558/Fastq/*.sam
+ 3411  less /lab/solexa_weissman/puzheng/Sequencing_data/231027_M01799_0469_000000000-L5YYM/20231028_082558/Fastq/MF1-amplified_S1_L001_R1_001.fastq.gzexit.sam
+ 3412  tail /lab/solexa_weissman/puzheng/Sequencing_data/231027_M01799_0469_000000000-L5YYM/20231028_082558/Fastq/MF1-amplified_S1_L001_R1_001.fastq.gzexit.sam
+ 3413  ls
+ 3414  cd /lab/solexa_weissman/puzheng/Sequencing_data/231027_M01799_0469_000000000-L5YYM/20231028_082558/Fastq/
+ 3415  ls
+ 3416  cp submit_bowtie2.slurm submit_sam2bam.slurm
+ 3417  vim submit_sam2bam.slurm 
+ 3418  mkdir /lab/solexa_weissman/puzheng/slurm_reports/samtools
+ 3419  sbatch submit_sam2bam.slurm 
+ 3420  ls -l *.sam
+ 3421  ls /lab/solexa_weissman/puzheng/slurm_reports/samtools/
+ 3422  ls /lab/solexa_weissman/puzheng/slurm_reports/samtools/711305.stderr
+ 3423  cat /lab/solexa_weissman/puzheng/slurm_reports/samtools/711305.stderr
+ 3424  vim submit_sam2bam.slurm 
+ 3425  sbatch submit_sam2bam.slurm 
+ 3426  ls -l *.bam
+ 3427  samtools stats MF1-amplified_S1_L001_R1_001.fastq.gzexit.sam.sorted.bam 
+ 3428  samtools stats MF1-amplified_S1_L001_R1_001.fastq.gzexit.sam.sorted.bam > Stats_MF1-amplified_S1_L001_R1_001.txt
+ 3429  more Stats_MF1-amplified_S1_L001_R1_001.txt 
+ 3430  less -S MF1-amplified_S1_L001_R1_001.fastq.gzexit.sam
+ 3431  tail -S MF3-amplified_S1_L001_R1_001.fastq.gzexit.sam
+ 3432  tail -t MF3-amplified_S1_L001_R1_001.fastq.gzexit.sam
+ 3433  tail -s MF3-amplified_S1_L001_R1_001.fastq.gzexit.sam
+ 3434  tail MF3-amplified_S1_L001_R1_001.fastq.gzexit.sam
+ 3435  tail MF3-amplified_S3_L001_R1_001.fastq.gzexit.sam
+ 3436  tail 20 MF3-amplified_S3_L001_R1_001.fastq.gzexit.sam
+ 3437  tail 25 MF3-amplified_S3_L001_R1_001.fastq.gzexit.sam
+ 3438  samtools idxstats MF1-amplified_S1_L001_R1_001.fastq.gzexit.sam.sorted.bam > MF1-amplified_S1_L001_stat.txt
+ 3439  ls
+ 3440  cat MF1-amplified_S1_L001_stat.txt 
+ 3441  head MF1-amplified_S1_L001_stat.txt 
+ 3442  history
+ 3443  samtools idxstats MF1-twist_S4_L001_R1_001.fastq.gzexit.sam.sorted.bam > MF1-twist_S4_L001_stat.txt
+ 3444  ls
+ 3445  head MF1-twist_S4_L001_stat.txt 
+ 3446  samtools idxstats MF2-twist_S4_L001_R1_001.fastq.gzexit.sam.sorted.bam > MF2-twist_S4_L001_stat.txt
+ 3447  ls
+ 3448  rm MF2-twist_S4_L001_stat.txt 
+ 3449  ls
+ 3450  cd /lab/weissman_imaging
+ 3451  ls
+ 3452  samtools idxstats MF2-twist_S5_L001_R1_001.fastq.gzexit.sam.sorted.bam > MF2-twist_S5_L001_stat.txt
+ 3453  samtools idxstats MF2-amplified_S2_L001_R1_001.fastq.gzexit.sam.sorted.bam > MF2-amplified_S2_L001_stat.txt
+ 3454  ls -l *.txt
+ 3455  rm Stats_MF1-amplified_S1_L001_R1_001.txt 
+ 3456  ls
+ 3457  samtools idxstats MF3-amplified_S3_L001_R1_001.fastq.gzexit.sam.sorted.bam > MF3-amplified_S3_L001_stat.txt
+ 3458  samtools idxstats MF3-twist_S6_L001_R1_001.fastq.gzexit.sam.sorted.bam > MF3-twist_S6_L001_stat.txt
+ 3459  ls
+ 3460  ls *.txt
+ 3461  ls -l *.txt
+ 3462  tail MF3-twist_S6_L001_stat.txt
+ 3463  tail MF3-amplified_S3_L001_stat.txt
+ 3464  watch squeue -u puzheng
+ 3465  cd /lab/weissman_imaging/
+ 3466  cd puzheng/Softwares/Weissman_MERFISH_Scripts/
+ 3467  git add *
+ 3468  git commit -m "update example 0913"
+ 3469  git push
+ 3470  git pull
+ 3471  ls
+ 3472  mv -r /lab/solexa_weissman/puzheng/PE_LT/20230926-4T1Hek3_preEdit_400k0907/ /lab/weissman_imaging/puzheng/PE_LT/
+ 3473  mv /lab/solexa_weissman/puzheng/PE_LT/20230926-4T1Hek3_preEdit_400k0907/ /lab/weissman_imaging/puzheng/PE_LT/
+ 3474  cd /lab/weissman_imaging/
+ 3475  ls
+ 3476  cd puzheng/
+ 3477  ls
+ 3478  mkdir Probes
+ 3479  ls
+ 3480  cd Probes/
+ 3481  ls
+ 3482  scp -r pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Users/pzheng/Chromatin_Libraries .
+ 3483  rsync -h -v -r -P -t pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Users/pzheng/Chromatin_Libraries .
+ 3484  ls
+ 3485  rm -r Chromatin_Libraries/
+ 3486  rm -rf Chromatin_Libraries/
+ 3487  cd /lab/weissman_imaging
+ 3488  ls
+ 3489  cd puzheng/
+ 3490  ls
+ 3491  cd P
+ 3492  cd Probes/
+ 3493  ls
+ 3494  rsync -h -v -r -P -t pzheng@login.rc.fas.harvard.edu:/n/holylfs04/LABS/zhuang_lab/Users/pzheng/Chromatin_Libraries .
+ 3495  ls
+ 3496  cd Chromatin_Libraries/
+ 3497  ls
+ 3498  cd Existing_MERFISH/
+ 3499  ls
+ 3500  vim M1_meng.fasta 
+ 3501  tail M1_meng.fasta 
+ 3502  ls
+ 3503  cd ..
+ 3504  ls
+ 3505  cd Softwares/
+ 3506  cd Weissman_MERFISH_Scripts/sl
+ 3507  cd Weissman_MERFISH_Scripts/
+ 3508  ls
+ 3509  cd Slurm_scripts/
+ 3510  ls
+ 3511  cd Jupyter/
+ 3512  ls
+ 3513  vim start_GPU_jupyter.slurm 
+ 3514  sbatch start_GPU_jupyter.slurm 
+ 3515  cd ../..
+ 3516  ls
+ 3517  cd ..
+ 3518  ls
+ 3519  cd /lab/weissman_imaging/puzheng/slurm_reports/
+ 3520  ls
+ 3521  cd GPU_jupyter/
+ 3522  ls
+ 3523  cat 728382.stdout 
+ 3524  ls
+ 3525  cd /lab/weissman_imaging/puzheng/
+ 3526  ls
+ 3527  cd Merfish_seq/
+ 3528  ls
+ 3529  cd 20230623-KPtumor_lung_c2/
+ 3530  ls
+ 3531  cd Segmentation/
+ 3532  ls
+ 3533  ls -l
+ 3534  cd ..
+ 3535  ls
+ 3536  cd H0M1
+ 3537  ls
+ 3538  cd ..
+ 3539  ls
+ 3540  pwd
+ 3541  ls
+ 3542  ls
+ 3543  sbatch start_GPU_jupyter.slurm 
+ 3544  squeue -u puzheng
+ 3545  cat 728868.stdout 
+ 3546  ls
+ 3547  cat 729211.stdout 
+ 3548  cd ..
+ 3549  ls
+ 3550  cd ..
+ 3551  ls
+ 3552  cd MERFISH_data/
+ 3553  ls
+ 3554  cd /lab/weissman_imaging/puzheng/
+ 3555  cd MERFISH_data/
+ 3556  ls
+ 3557  cd ..
+ 3558  cd MERFISH_analysis/
+ 3559  ls
+ 3560  mkdir 20230623-KPtumor_C2
+ 3561  cd 20230623-KPtumor_C2/
+ 3562  ls
+ 3563  mkdir CellPoseSegment
+ 3564  cd CellPoseSegment/
+ 3565  cd ..
+ 3566  ls
+ 3567  cd 20230622-4T1primary_C2/
+ 3568  ls
+ 3569  cd ..
+ 3570  cd 20230513-wtBrain_MO4/CellPoseSegment/segmentation_label/
+ 3571  cd ../../..
+ 3572  cd 20230623-KPtumor_C2/
+ 3573  ls
+ 3574  cd CellPoseSegment
+ 3575  mkdir segmentation_label
+ 3576  ls
+ 3577  cd segmentation_label/
+ 3578  cd ..
+ 3579  ls
+ 3580  cp -r /lab/weissman_imaging/puzheng/Merfish_seq/20230623-KPtumor_lung_c2/Segmentation/ .
+ 3581  cd ..
+ 3582  cd Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/
+ 3583  ls
+ 3584  sbatch 20230623-C2_storm6.slurm 
+ 3585  watch squeue -u puzheng
+ 3586  ls
+ 3587  cd ..
+ 3588  cd MERFISH_analysis/
+ 3589  ls
+ 3590  cd 20230623-KPtumor_C2/
+ 3591  ls
+ 3592  cd ..
+ 3593  cd 20230623-KPtumor_C2/
+ 3594  cd ..
+ 3595  ls
+ 3596  cd ..
+ 3597  ls
+ 3598  cd slurm_reports/MERLin_Scheduler/
+ 3599  ls
+ 3600  cat 729394.stdout 
+ 3601  conda activate merlin_py310
+ 3602  sbatch 20230623-C2_storm6.slurm 
+ 3603  ls
+ 3604  cat 729395.stdout 
+ 3605  watch tail 729395.stdout 
+ 3606  squeue -u puzheng
+ 3607  watch tail 729396.stdout 
+ 3608  cd ../MERLin_Jobs/
+ 3609  cat 730198.stdout
+ 3610  cat 730198.stderr
+ 3611  /lab/weissman_imaging/puzheng/.conda/env/merlin_py310/bin/python -m merlin -t GenerateMosaic -e "/lab/weissman_imaging/puzheng/MERFISH_data" -s "/lab/weissman_imaging/puzheng/MERFISH_analysis" 20230623-KPtumor_C2
+ 3612  scancel 729396
+ 3613  scancel 729424
+ 3614  scancel 729211
+ 3615  scancel 728868
+ 3616  ls
+ 3617  sbatch 20230623-C2_storm6.slurm 
+ 3618  watch suque -u puzheng
+ 3619  cd ..
+ 3620  cd MERLin_Scheduler/
+ 3621  ls
+ 3622  tail 730923.stdout
+ 3623  ls -l
+ 3624  ls 
+ 3625  watch squeue -u puzheng
+ 3626  conda activate postanalysis
+ 3627  ls
+ 3628  cd examples/
+ 3629  ls
+ 3630  cat Example_preprocess.sh 
+ 3631  cd ..
+ 3632  ls
+ 3633  python ./src/chroman.py
+ 3634  cd src
+ 3635  watch tail 730923.stdout
+ 3636  watch squeue -u puzheng
+ 3637  scancel -u puzheng
+ 3638  squeue
+ 3639  cd ..
+ 3640  ls
+ 3641  sbatch 20230623-C2_storm6.slurm 
+ 3642  vim 20230623-C2_storm6.slurm 
+ 3643  sbatch 20230623-C2_storm6.slurm 
+ 3644  vim 20230623-C2_storm6.slurm 
+ 3645  sbatch 20230623-C2_storm6.slurm 
+ 3646  vim 20230623-C2_storm6.slurm 
+ 3647  conda activate merlin_py310
+ 3648  sbatch 20230623-C2_storm6.slurm 
+ 3649  ls
+ 3650  cd /lab/weissman_imaging/puzheng/
+ 3651  ls
+ 3652  cd Softwares/ChromAn/
+ 3653  ls
+ 3654  cd src
+ 3655  ls
+ 3656  cat ../examples/Example_preprocess.sh 
+ 3657  python chroman.py -t image_preprocess -f H0M1 -c color_usage_labelX.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/Analysis/H0_preprocessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/
+ 3658  conda activate postanalysis
+ 3659  python chroman.py -t image_preprocess -f H0M1 -c color_usage_labelX.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/Analysis/H0_preprocessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/
+ 3660  sbatch 0.01x_image_preprocess.sh 
+ 3661  cd ../..
+ 3662  cd Weissman_MERFISH_Scripts/
+ 3663  git commit -m "0623_merfish_analysis"
+ 3664  git push
+ 3665  git commit -m "1110_labelx_analysis"
+ 3666  git push
+ 3667  git pull
+ 3668  ls
+ 3669  tail MERLin_Scheduler/732010.stdout 
+ 3670  ls
+ 3671  cd ..
+ 3672  cd Softwares/ChromAn/src/
+ 3673  ls
+ 3674  history
+ 3675  conda activate postanalysis
+ 3676  python chroman.py -t image_preprocess -f H0M1 -c color_usage_labelX.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/Analysis/H0_preprocessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.1x/
+ 3677  sbatch 0.1x_image_preprocess.sh 
+ 3678  python chroman.py -t image_preprocess -f H0M1 -c color_usage_labelX.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ --nodes 4 -a /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/Analysis/H0_preprocessParam.pkl /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/1x/
+ 3679  sbatch 1x_image_preprocess.sh 
+ 3680  watch squeue -u puzheng
+ 3681  squeue -u puzheng
+ 3682  scancel 732010
+ 3683  squeue -u puzheng
+ 3684  ls
+ 3685  cd Slurm_scripts/
+ 3686  ls
+ 3687  cd J
+ 3688  cd Jupyter/
+ 3689  ls
+ 3690  sbatch start_GPU_jupyter.slurm 
+ 3691  cd ..
+ 3692  ls
+ 3693  cd slurm_reports/
+ 3694  ls
+ 3695  cd GPU_jupyter/
+ 3696  ls
+ 3697  cat 737311.stdout 
+ 3698  ls
+ 3699  cat ../examples/Example_preprocess.sh 
+ 3700  python chroman.py  -t cell_segment -f H0M1 -c color_usage_labelX.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/Analysis/H0_CellposeParam.pkl --nodes 3 /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/ -g
+ 3701  vim 0.01x_cell_segment.sh 
+ 3702  python chroman.py  -t cell_segment -f H0M1 -c color_usage_labelX.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/Analysis/H0_CellposeParam.pkl --nodes 3 -g /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/
+ 3703  vim 0.01x_cell_segment.sh 
+ 3704  python chroman.py -t cell_segment -f H0M1 -c color_usage_labelX.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/Analysis/H0_CellposeParam.pkl --nodes 3 -g /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/
+ 3705  vim 0.01x_cell_segment.sh 
+ 3706  python chroman.py -t cell_segment -f H0M1 -c color_usage_labelX.csv -o /lab/weissman_imaging/puzheng/slurm_reports/ChromAn_Jobs/ -a /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/Analysis/H0_CellposeParam.pkl --nodes 3 -g /lab/weissman_imaging/puzheng/PE_LT/20231110-4T1v21x_LabelX_test/0.01x/
+ 3707  vim 0.01x_cell_segment.sh 
+ 3708  sbatch 0.01x_cell_segment.sh 
+ 3709  cd ..
+ 3710  ls
+ 3711  cd ..
+ 3712  ls
+ 3713  cd slurm_reports/
+ 3714  cd GPU_jupyter/
+ 3715  ls
+ 3716  cat 737311.stdout 
+ 3717  cd ../..
+ 3718  cd .
+ 3719  cd ..
+ 3720  ls
+ 3721  cd Probes/
+ 3722  ls
+ 3723  cd Chromatin_Libraries/
+ 3724  ls
+ 3725  cd hM1_MERFISH/
+ 3726  ls
+ 3727  watch squeue -u puzheng
+ 3728  vim designed_probe_sequences_hM1.fasta 
+ 3729  cd ..
+ 3730  cd Softwares/Weissman_MERFISH_Scripts/
+ 3731  git add *
+ 3732  git pull
+ 3733  git commit -m "merge"
+ 3734  git push
+ 3735  ls
+ 3736  cd ~
+ 3737  ls
+ 3738  cd Softwares/
+ 3739  ls
+ 3740  cd ..
+ 3741  ls
+ 3742  cd Scripts/
+ 3743  ls
+ 3744  cd Construct/
+ 3745  ls
+ 3746  cd ..
+ 3747  cd MERFISH_Probe/
+ 3748  ls
+ 3749  cd RandomSeq_IntBC/
+ 3750  ls
+ 3751  cd ..
+ 3752  cp /lab/weissman_imaging/SampleSheet_231117_Merfish_oPools.csv /nfs/WIGTC/pub/MISEQ_DATA
+ 3753  cd /nfs/WIGTC/pub/MISEQ_DATA
+ 3754  ls
+ 3755  watch squeue -u puzheng
+ 3756  gpg2 --list-keys
+ 3757  cd /lab/weissman_imaging/puzheng/Softwares/
+ 3758  dir
+ 3759  cd ChromAn/
+ 3760  git pull
+ 3761  git add *
+ 3762  git commit "fix error import"
+ 3763  git commit -m "fix error import"
+ 3764  git push
+ 3765  git pull
+ 3766  python
+ 3767  ls
+ 3768  cd ../../..
+ 3769  ls
+ 3770  cp /lab/weissman_imaging/SampleSheet_231120_Merfish_oPools.csv /nfs/WIGTC/pub/MISEQ_DATA
+ 3771  ;s
+ 3772  ls
+ 3773  cd ..
+ 3774  cd /lab/solexa_weissman/puzheng/Sequencing_data/
+ 3775  ls
+ 3776  cd 231120_M01799_0478_000000000-KGY2N/
+ 3777  cd /lab/weissman_imaging/puzheng/Softwares/Weissman_MERFISH_Scripts/
+ 3778  ls
+ 3779  cd Slurm_scripts/
+ 3780  ls
+ 3781  cd ..
+ 3782  ls
+ 3783  cd ..
+ 3784  ls
+ 3785  cd 231027_M01799_0469_000000000-L5YYM/
+ 3786  ls
+ 3787  cd Analysis/
+ 3788  ls
+ 3789  cd ..
+ 3790  ls
+ 3791  cd 20231028_082558/
+ 3792  ls
+ 3793  cd Sequencing_analysis/
+ 3794  ls
+ 3795  cd Fastq/
+ 3796  ls
+ 3797  cd ..
+ 3798  ls
+ 3799  cd ..
+ 3800  ls
+ 3801  cd ..
+ 3802  cd 231120_M01799_0478_000000000-KGY2N/
+ 3803  ls
+ 3804  cd Analysis/
+ 3805  ls
+ 3806  bowtie2
+ 3807  bowtie2-build All_probes.fasta merged_probes
+ 3808  ls
+ 3809  cd ..
+ 3810  ls
+ 3811  cd 20231121_081440/
+ 3812  ls
+ 3813  cd Fastq/
+ 3814  ls
+ 3815  vim submit_bowtie2.slurm 
+ 3816  ls ../..
+ 3817  ls ../../Analysis/
+ 3818  sbatch submit_bowtie2.slurm 
+ 3819  watch squeue -u puzheng
+ 3820  ls
+ 3821  ls 
+ 3822  vim submit_bowtie2.slurm 
+ 3823  watch squeue -u puzheng
+ 3824  ls
+ 3825  vim submit_bowtie2.slurm 
+ 3826  ls
+ 3827  vim FastqSummaryF1L1.txt 
+ 3828  squeue -u puzheng
+ 3829  scancel 753973
+ 3830  cat submit_bowtie2.slurm 
+ 3831  for FILE in *R1_001.fastq.gz; do BASENAME=${file%%_R1_001.fastq.gz*}; echo $BASENAME; done
+ 3832  for FILE in *R1_001.fastq.gz; do BASENAME=${file%%_R1_001.fastq.gz*}; echo $FILE; done
+ 3833  for FILE in *R1_001.fastq.gz; do BASENAME=${file%%_R1_001.fastq.gz*}; echo $FILE; echo $BASENAME; done
+ 3834  for FILE in *R1_001.fastq.gz; do BASENAME=${param%%_R1_001.fastq.gz*}; echo $FILE; echo $BASENAME; done
+ 3835  for FILE in *R1_001.fastq.gz; do BASENAME=${param%%_R1_001.fastq.gz*}; echo $FILE; echo $PARAM; done
+ 3836  echo FILE
+ 3837  echo $FILE
+ 3838  echo $PARAM
+ 3839  echo $TEST
+ 3840  for FILE in *R1_001.fastq.gz; echo "${file%.R1_001.fastq.gz}"; echo $FILE; echo $BASENAME; done
+ 3841  for FILE in *R1_001.fastq.gz; do; echo "${file%.R1_001.fastq.gz}"; echo $FILE; echo $BASENAME; done
+ 3842  for FILE in *R1_001.fastq.gz; do echo "${file%.R1_001.fastq.gz}"; echo $FILE; echo $BASENAME; done
+ 3843  for FILE in *R1_001.fastq.gz; do echo "${FILE%.R1_001.fastq.gz}"; echo $FILE; echo $BASENAME; done
+ 3844  for FILE in *R1_001.fastq.gz; do echo "${FILE%%R1_001.fastq.gz}"; echo $FILE; echo $BASENAME; done
+ 3845  for FILE in *R1_001.fastq.gz; do echo "${FILE%%_R1_001.fastq.gz}"; echo $FILE; echo $BASENAME; done
+ 3846  cat submit_bowtie2.slurm 
+ 3847  sbatch submit_bowtie2.slurm 
+ 3848  ls
+ 3849  watch squeue -u puzheng
+ 3850  ls
+ 3851  vim submit_bowtie2.slurm 
+ 3852  sbatch submit_bowtie2.slurm 
+ 3853  watch squeue -u puzheng
+ 3854  ls
+ 3855  ls -l
+ 3856  history
+ 3857  ls -l
+ 3858  cd ..
+ 3859  ./ /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/20231121_081440/Fastq
+ 3860  ls
+ 3861  cd Analysis/
+ 3862  ./submit_analysis.sh /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/20231121_081440/Fastq
+ 3863  squeue -u puzheng
+ 3864  pwd
+ 3865  sbatch --wrap='./run_analysis.sh /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/20231121_081440/Fastq/Amplified-MF2_S6_L001_R1_001.fastq.gz'
+ 3866  sbatch --wrap='./run_analysis.sh /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/20231121_081440/Fastq/Amplified-MF2_S6_L001_R1_001.fastq.gz' --partition=weissman --account=weissman
+ 3867  squeue -u puzheng
+ 3868  ls ../20231121_081440/Fastq/
+ 3869  ls
+ 3870  squeue -u puzheng
+ 3871  ls ../20231121_081440/Fastq/
+ 3872  ls ../20231121_081440/Fastq/*.sam
+ 3873  ls ../20231121_081440/Fastq/*.sam -l
+ 3874  ls
+ 3875  scancel weissman
+ 3876  scancel 753989
+ 3877  scancel 753978
+ 3878  squeue -u puzheng
+ 3879  ls
+ 3880  ./submit_analysis.sh /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/20231121_081440/Fastq
+ 3881  squeue -u puzheng
+ 3882  ./submit_analysis.sh /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/20231121_081440/Fastq
+ 3883  squeue -u puzheng
+ 3884  ls ../20231121_081440/Fastq/*.sam -l
+ 3885  squeue -u puzheng
+ 3886  ./submit_analysis.sh /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/20231121_081440/Fastq
+ 3887  squeue -u puzheng
+ 3888  ls
+ 3889  ls ../20231121_081440/Fastq/*.sam -l
+ 3890  cd ..
+ 3891  ls
+ 3892  cd 20231121_081440/Fastq/
+ 3893  ls
+ 3894  cd ..
+ 3895  cd Analysis/
+ 3896  ls
+ 3897  head All_probes.fasta 
+ 3898  cd ../20231121_081440/Fastq/
+ 3899  ls
+ 3900  cat Amplified-IntBC-30no_S5_L001.idxstats 
+ 3901  cat Amplified-MF3_S2_L001.idxstats 
+ 3902  ls -l *.flagstat
+ 3903  ls -l *.bam
+ 3904  ls -l *.bam.bai
+ 3905  ls -l *.sorted.bam
+ 3906  ls
+ 3907  samtools sort Amplified-IntBC-30no_S5_L001.bam -o Amplified-IntBC-30no_S5_L001.sorted.bam
+ 3908  ls -l
+ 3909  cd ..
+ 3910  ls
+ 3911  cd Analysis/
+ 3912  ls
+ 3913  bowtie2-build All_probes.fasta merged_probes
+ 3914  squeue -u puzheng
+ 3915  squeue -u $USER | grep 197 | awk '{print $1}' | xargs -n 1 scancel
+ 3916  squeue -u $USER | grep 197 | awk '{print $1}' | xargs -n 1 scancelsqueue -u $USER | awk '{print $1}' | tail -n+2 | xargs scancel
+ 3917  squeue -u puzheng
+ 3918  squeue -u $USER | grep 197 | awk '{print $1}' | xargs -n 1
+ 3919  squeue -u puzheng
+ 3920  squeue -u $USER -h | awk '{print $1}' | xargs scancel
+ 3921  squeue -u puzheng
+ 3922  ls ../20231121_081440/Fastq/*.bam
+ 3923  ls ../20231121_081440/Fastq/*.bam -l
+ 3924  ls ../20231121_081440/Fastq/*.sam -l
+ 3925  tail ../20231121_081440/Fastq/Amplified-IntBC-30no_S5_L001.sam
+ 3926  head ../20231121_081440/Fastq/Amplified-IntBC-30no_S5_L001.sam
+ 3927  ls
+ 3928  sbatch --wrap='./run_analysis.sh /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/20231121_081440/Fastq/Amplified-MF2_S6_L001_R1_001.fastq.gz' --partition=weissman --account=weissman
+ 3929  squeue -u puzheng
+ 3930  cd /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/Analysis
+ 3931  cd ../20231121_081440/Fastq/
+ 3932  ls
+ 3933  ls -l
+ 3934  squeue
+ 3935  ls
+ 3936  rm -f Undetermined_S0_L001.sam 
+ 3937  ls
+ 3938  ls -l
+ 3939  if test Twist-MO4_S3_L001.bam; echo $FILE; done
+ 3940  if test Twist-MO4_S3_L001.bam; echo $FILE;  done
+ 3941  if test Twist-MO4_S3_L001.bam; do echo $FILE;  done
+ 3942  if test -f Twist-MO4_S3_L001.bam do echo $FILE;  done
+ 3943  if test -f Twist-MO4_S3_L001.bam; do echo $FILE;  done
+ 3944  if test -f Twist-MO4_S3_L001.bam; do; echo $FILE;  done
+ 3945  if test -f Twist-MO4_S3_L001.bam; echo "TEST" fi fi
+ 3946  if test -f Twist-MO4_S3_L001.bam; echo "TEST"; fi
+ 3947  if test -f Twist-MO4_S3_L001.bam; then; echo "TEST"; fi
+ 3948  if test -f Twist-MO4_S3_L001.bam; then echo "TEST"; fi
+ 3949  ls
+ 3950  squeue -u $USER
+ 3951  ls -l
+ 3952  cd ..
+ 3953  ls
+ 3954  ls -l
+ 3955  cd Fastq/
+ 3956  ls -l *.bam
+ 3957  rm -f *.bam
+ 3958  ls
+ 3959  rm -f *.flagstat
+ 3960  rm -f *.idxstats
+ 3961  ls
+ 3962  squeue -u $USER
+ 3963  scancel 754029
+ 3964  ls
+ 3965  squeue -u $USER
+ 3966  rm -f *.sam
+ 3967  ls
+ 3968  cd ..\
+ 3969  cd ..
+ 3970  cd Analysis/
+ 3971  ks
+ 3972  ls
+ 3973  ./submit_analysis.sh /lab/solexa_weissman/puzheng/Sequencing_data/231120_M01799_0478_000000000-KGY2N/20231121_081440/Fastq
+ 3974  cd ..
+ 3975  cd 20231121_081440/Fastq/
+ 3976  ls -l
+ 3977  watch ls -l
+ 3978  watch -n 10 ls -l
+ 3979  ls
+ 3980  ls -l *.bam
+ 3981  ls *.fatsq
+ 3982  ls
+ 3983  tail Amplified-IntBC-30no_S5_L001_R1_001.fastq
+ 3984  head Amplified-IntBC-30no_S5_L001_R1_001.fastq
+ 3985  head 20 Amplified-IntBC-30no_S5_L001_R1_001.fastq
+ 3986  seqtk
+ 3987  seqtk trimfq -b 3 Amplified-IntBC-30no_S5_L001_R1_001.fastq.gz 
+ 3988  seqtk trimfq -b 3 Amplified-IntBC-30no_S5_L001_R1_001.fastq.gz > Amplified-IntBC-30no_S5_L001_trimmed_fastq
+ 3989  ls -l
+ 3990  ls
+ 3991* 
+ 3992  ls -l
+ 3993  ls
+ 3994  less Twist-MO4_S3_L001_trimmed.fastq 
+ 3995  less Twist-MO4_S3_L001.sam
+ 3996  tail Twist-MO4_S3_L001.sam
+ 3997  tail Twist-MO4_S3_L001_trimmed.fastq 
+ 3998  tail 2- Twist-MO4_S3_L001.sam
+ 3999  tail 20 Twist-MO4_S3_L001.sam
+ 4000  tail -n 20 Twist-MO4_S3_L001.sam
+ 4001  ls -l
+ 4002  watch squeue -u $USER
+ 4003  cd ..
+ 4004  cd /lab/weissman_imaging/puzheng/
+ 4005  ls
+ 4006  cd Softwares/
+ 4007  cd ChromAn/
+ 4008  ls
+ 4009  cd src
+ 4010  ls
+ 4011  vim PFA_image_preprocess.sh 
+ 4012  ls
+ 4013  cd ..
+ 4014  cd Weissman_MERFISH_Scripts/
+ 4015  ls
+ 4016  git add *
+ 4017  git commit -m "1204 update"
+ 4018  git push
+ 4019  cd ~
+ 4020  ls
+ 4021  cd Scripts/
+ 4022  ls
+ 4023  cd MERFISH_Probe/
+ 4024  ls
+ 4025  cd RandomSeq_IntBC/
+ 4026  ls
+ 4027  cd ..
+ 4028  ls
+ 4029  cd ..
+ 4030  ls
+ 4031  cd PE_LT/
+ 4032  ls
+ 4033  cd 120nt_old/
+ 4034  ls
+ 4035  cd ..
+ 4036  ls
+ 4037  cd Construct/
+ 4038  ls
+ 4039  cd ..
+ 4040  ls
+ 4041  cd MERFISH_analysis/
+ 4042  ls
+ 4043  cat /lab/weissman_imaging/puzheng/slurm_reports/GPU_jupyter/835703.stdout
+ 4044  watch cat /lab/weissman_imaging/puzheng/slurm_reports/GPU_jupyter/835703.stdout
+ 4045  ls
+ 4046  cat /lab/weissman_imaging/puzheng/MERFISH_analysis/
+ 4047  ls /lab/weissman_imaging/puzheng/MERFISH_analysis/
+ 4048  cd ..
+ 4049  ls /lab/weissman_imaging/puzheng/MERFISH_data/
+ 4050  cd /lab/weissman_imaging/puzheng/MERFISH_analysis/
+ 4051  ls
+ 4052  mkdir 20231224-msBrainStg4_MF5
+ 4053  cd 20231224-msBrainStg4_MF5/
+ 4054  ls
+ 4055  cd ..
+ 4056  cd Softwares/Weissman_MERFISH_Scripts/Slurm_scripts/
+ 4057  ls
+ 4058  conda activate merlin_py310
+ 4059  ls
+ 4060  sbatch 20231224-MF5_merscope01.slurm 
+ 4061  cat /lab/weissman_imaging/puzheng/slurm_reports/MERLin_Scheduler/835829.stdout
+ 4062  watch tail -n 20 /lab/weissman_imaging/puzheng/slurm_reports/MERLin_Scheduler/835829.stdout
+ 4063  ls
+ 4064  scancel 847382
+ 4065  scancel 847458
+ 4066  scancel 848253
+ 4067  ls
+ 4068  cd Jupyter/
+ 4069  ls
+ 4070  vim start_GPU_jupyter.slurm 
+ 4071  ls
+ 4072  sbatch start_GPU_jupyter.slurm 
+ 4073  lfs
+ 4074  lf
+ 4075  df
+ 4076  df -h
+ 4077  df -h /lab/solexa_weissman
+ 4078  ls
+ 4079  sbatch start_GPU_jupyter.slurm 
+ 4080  ls
+ 4081  cd ..
+ 4082  ls
+ 4083  cd ..
+ 4084  ls
+ 4085  cd Sequencing_analysis/
+ 4086  ls
+ 4087  cd ..
+ 4088  cd Slurm_scripts/
+ 4089  ls
+ 4090  cd Jupyter/
+ 4091  ls
+ 4092  cd ..
+ 4093  history
+ 4094  history > command_history.txt
