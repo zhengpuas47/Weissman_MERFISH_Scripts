@@ -1,0 +1,265 @@
+---
+title: "10K MERFISH Analysis"
+author: "Jean Fan"
+date: "8/9/2019"
+output: pdf_document
+---
+
+```R
+x=2
+```
+
+
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(
+    warning = FALSE,
+    message = FALSE,
+    cache = FALSE,
+    dpi=100
+)
+```
+
+## Read in data
+
+We will first read in expression count matrices for the whole cell and the nucleus respectively provided as Supplementary Tables 12 and 14. We will also create a cytoplasmic expression count matrix by subtracting the nucleus from the whole cell for downstream use. Here, each row is a gene (or blank) assayed by MERFISH, and each column is a cell. 
+
+```{r data}
+dir <- '/Users/jefworks/Dropbox (HMS)/Manuscript_Drafts/MERFISH_scalingup_manuscript/Last round submitted datasets/'
+cell_gexp <- as.matrix(read.csv(paste0(dir, '474674_1_supp_8078935_pvf03d_S12.csv'), row.names=1))
+print(cell_gexp[1:5,1:5])
+nuc_gexp <- as.matrix(read.csv(paste0(dir, '474674_1_supp_8078937_pvf03x_S14.csv'), row.names=1))
+print(nuc_gexp[1:5,1:5])
+cyto_gexp <- cell_gexp - nuc_gexp
+print(cyto_gexp[1:5,1:5])
+```
+
+In this MERFISH library, 9,050 genes that were labeled with the non-overlapping encoding probe strategy (rows 2 to 9,051) and the 1,000 genes were labeled with the overlapping encoding probe strategy (rows 9,280 to 10,279). The remaining are used a blank controls. 
+
+```{r genetypes}
+gene_info <- read.csv(paste0(dir, '475740_0_supp_8082568_pvlljy_S1.csv'), header=FALSE, stringsAsFactors = FALSE)
+long.genes <- gene_info[2:9051,1]
+short.genes <- gene_info[9280:10279,1]
+bad.genes <- gene_info[,1][grepl('Blank', gene_info[,1])]
+
+length(long.genes)
+length(short.genes)
+length(bad.genes)
+```
+
+# Cluster cells
+
+Single-cell transcriptomic analysis enables the identification of novel cell types and cell states in a systematic and quantitative manner. To illustrate this, we will perform single-cell clustering analysis to identify cell populations based on the gene expression profiles of individual cells. Briefly, we filter out lowly expressed genes, performed batch correction, CPM and variance normalization, identify over-dispersed genes, and applied principal components (PC) analysis to identify 30 PCs that capture the greatest variance, apply graph-based Louvain clustering in the PC space to identify cell clusters, and finally project into 2D using tSNE for visualization. 
+
+```{r cluster, fig.height = 6, fig.width = 6}
+cd <- cell_gexp[test.genes,]
+
+## annotate batch
+batch <- sapply(colnames(cd), function(x) strsplit(x, '_')[[1]][1])
+batch <- factor(batch)
+table(batch)
+
+## remove lowly expressed
+vi <- rowMeans(cd) > 1
+table(vi)
+cd <- cd[vi,]
+
+## batch correct
+library(sva)
+mat.bc <- ComBat(as.matrix(cd), batch[colnames(cd)])
+mat.bc[mat.bc < 0] <- 0
+mat <- mat.bc
+
+## CPM normalization
+matcpm <- normalizeCounts(mat)
+## Variance normalization
+library(MUDAN)
+matnorm <- MUDAN::normalizeVariance(matcpm, details=TRUE, plot=TRUE)
+## Restrict to overdispersed genes
+m <- log10(as.matrix(t(matnorm$mat[matnorm$ods,]))+1)
+## PCA
+pcs <- prcomp(m)
+
+## tSNE on 30 PCs
+set.seed(1)
+library(Rtsne)
+emb <- Rtsne::Rtsne(pcs$x[,1:30], 
+                    is_distance=FALSE,
+                    perplexity=10,
+                    num_threads=1,
+                    verbose=FALSE)$Y
+rownames(emb) <- rownames(pcs$x)
+
+## Rotate embedding
+emb.test <- emb
+f = -pi*0.6 # adjust as needed
+x = emb.test[,1]
+y = emb.test[,2]
+emb.test[,1] = x*cos(f) - y*sin(f)
+emb.test[,2] = y*cos(f) + x*sin(f)
+emb.test[,2] = -emb.test[,2] # flip as needed
+
+## Graph based community detection
+library(RANN)
+knn.info <- RANN::nn2(pcs$x[,1:30], k=50)
+knn <- knn.info$nn.idx
+adj <- matrix(0, ncol(mat), ncol(mat))
+rownames(adj) <- colnames(adj) <- colnames(mat)
+for(i in seq_len(ncol(mat))) {
+    adj[i,colnames(mat)[knn[i,]]] <- 1
+}
+library(igraph)
+g <- igraph::graph.adjacency(adj, mode="undirected")
+g <- simplify(g) ## remove self loops
+#km <- igraph::cluster_walktrap(g)
+km <- igraph::cluster_louvain(g)
+## community membership
+com <- km$membership
+names(com) <- km$names
+
+## Plot
+par(mfrow=c(1,1), mar=rep(5,4))
+MUDAN::plotEmbedding(emb.test, groups=com, 
+              mark.clusters=TRUE, cex=1, show.legend=TRUE, 
+              xlab='tSNE-1', ylab='tSNE-2', main='clustering', 
+              verbose=FALSE)
+MUDAN::plotEmbedding(emb.test, groups=batch, show.legend=TRUE, 
+              xlab='tSNE-1', ylab='tSNE-2', main='batch', 
+              verbose=FALSE)
+```
+
+Given that our measurements were performed on a single cell type, we previously noted these clusters to likely represent distinct cell states at different stages of the cell cycle. We can visualize expression of known cell-cycle markers to confirm this hypothesis.  
+
+```{r cc, fig.height = 6, fig.width = 6}
+## Winsorization helper function
+winsorize <- function(x, t=0.05) {
+    t1 = quantile(x, t)
+    t2 = quantile(x, 1-t)
+    x[x < t1] <- t1
+    x[x > t2] <- t2
+    return(x)
+}
+
+## Plot cell-cycle and house keeping genes noted in the manuscript
+par(mfrow=c(3,3), mar=rep(1,4))
+gs <- c('MCM5','SNN','UNG','MCM6','DSCC1','BCL2L1','CCNF','KIF2C','PPIE')
+invisible(lapply(gs, function(g) {
+    gexp = scale(winsorize(matcpm[g,], t=1e-3))[,1]
+    gexp[gexp > 2] <- 2
+    gexp[gexp < -2] <- -2
+    MUDAN::plotEmbedding(emb.test, main=g, col=gexp, verbose=FALSE)
+}))
+```
+
+Further understanding of these cell states will benefit from quantification of temporal changes of gene expression profiles across the cell cycle. However, like scRNA-seq analysis, MERFISH measurements capture only static snapshots in time. To address this limitation, we sought to place cells on a pseudotime axis by analysis of the RNA velocity, i.e. the time derivative of the gene expression state. As detailed in the original manuscript, we reasoned that RNA velocity could be inferred by distinguishing between nuclear and cytoplasmic mRNAs, leveraging the spatial information of transcripts obtained in our MERFISH measurements. We use these nuclear and cytoplasmic expression measurements as in situ analogues of unspliced and spliced mRNA expression measurements used in the original RNA velocity manuscript (La Manno et al, Nature 2018). Due to concerns of batch effects, we will limit analysis to one batch. 
+
+```{r velocity}
+library(velocyto.R)
+
+## Color by cluster
+cluster.label <- factor(com)
+cell.colors <- MUDAN:::fac2col(cluster.label)
+
+## Limit to one batch and highly expressed genes
+subcells <- names(batch)[batch == 'B2']
+emat <- cyto_gexp[rownames(cd), subcells] 
+nmat <- nuc_gexp[rownames(cd), subcells] 
+cell.dist <- as.dist(1-cor(t(pcs$x[subcells,1:30]))) ## cell distance in PC space
+fit.quantile <- 0.05 ## 5th extreme quantile
+## Velocity model
+rvel.cd <- gene.relative.velocity.estimates(emat, nmat, 
+                                            deltaT=1, kCells=30, 
+                                            cell.dist=cell.dist,
+                                            fit.quantile=fit.quantile)
+```
+
+Upon active upregulation of a gene, we anticipate a rapid increase in nuclear mRNA counts, followed by an increase in cytoplasmic mRNA counts due to nuclear export until a new steady state is reached. Conversely, active downregulation in transcription would lead to a rapid reduction in nuclear mRNA counts as the nuclear export of mRNAs continues; the cytoplasmic mRNA will drop eventually because of the reduction in the nuclear RNA pool for export and the continued RNA degradation in the cytoplasm. We can plot a few example cell-cycle genes to see if this assumption holds in our data for the appropriate clusters. 
+
+```{r velocity-example, fig.height = 2, fig.width = 6}
+## Plot a few genes
+gene.relative.velocity.estimates(emat, nmat,
+                                 kCells = 30,
+                                 fit.quantile = fit.quantile,
+                                 old.fit=rvel.cd,
+                                 show.gene='KIF2C',
+                                 cell.emb=emb.test,
+                                 cell.colors=cell.colors)
+```
+
+The balance of nuclear and cytoplasmic mRNA abundance is, therefore, an indicator of the future state of cytoplasmic RNA abundance. We used this approach to determine the RNA velocity for each cell and projected these velocities as arrows on the tSNE and PCA plots. 
+
+```{r velocity-plots, fig.height = 6, fig.width = 6}
+## Plot on tSNE
+show.velocity.on.embedding.cor(emb.test/10, rvel.cd, n=100,
+                               scale='sqrt', cell.colors=cell.colors,
+                               cex=1, arrow.scale=1, show.grid.flow=TRUE, 
+                               min.grid.cell.mass=0.5, grid.n=15, arrow.lwd=2)
+
+## Plot on PCA
+show.velocity.on.embedding.cor(pcs$x[,1:2], rvel.cd, n=100,
+                               scale='sqrt', cell.colors=cell.colors,
+                               cex=1, arrow.scale=1, show.grid.flow=TRUE,
+                               min.grid.cell.mass=0.5, grid.n=15, arrow.lwd=2)
+```
+
+# Pseudotime
+
+We interpret the cell ordering along the circle as the pseudotime. Examination of gene expression of known cell-cycle markers across pseudotime can further validate our pseudotime ordering. 
+
+```{r pseudotime, fig.height = 6, fig.width = 6}
+xi <- -20 # adjust as needed
+yi <- 5 # adjust as needed
+pseudotime <- atan2(emb.test[,2]-yi,emb.test[,1]-xi)/pi*180
+#pseudotime <- atan2(pcs$x[,2]-yi,pcs$x[,1]-xi)/pi*180
+pseudotime <- -pseudotime ## reverse as needed to match velocity arrows
+
+par(mfrow=c(3,3), mar=rep(1,4))
+gs <- c('MCM5','SNN','UNG','MCM6','DSCC1','BCL2L1','CCNF','KIF2C','PPIE')
+invisible(lapply(gs, function(g) {
+    gexp = winsorize(matcpm[g,], t=1e-3)
+    MUDAN::plotEmbedding(cbind(pseudotime, gexp), main=g, groups=com, verbose=FALSE)
+}))
+```
+
+We can also more systematically identify potentially novel cell-cycle-related genes by using a linear regression model to identify genes with a significant proportion of expression variance explained by pseudotime. Furthermore, we can order these putative cell-cycle-related genes based on their maximum points of expression along pseudotime. 
+
+```{r cc-genes, fig.height = 6, fig.width = 6}
+pvs <- sapply(rownames(matcpm), function(g) {
+    gexp <- matcpm[g,]; names(gexp) <- colnames(matcpm)
+    fit <- lm(gexp ~ pseudotime)
+    #fit <- lm(gexp ~ pseudotime.rand)
+    coef(summary(fit))['pseudotime',4]
+    #coef(summary(fit))['pseudotime.rand',4]
+})
+names(pvs) <- rownames(mat)
+pvs <- p.adjust(pvs, method="bonferroni")
+head(pvs)
+# Use more stringent threshold than 0.05 used in manuscript
+our.cc.genes <- names(pvs)[pvs < 1e-10] 
+
+## Order genes
+order <- sapply(our.cc.genes, function(g) {
+    gexp = matcpm[g,]
+    lo <- smooth.spline(x=pseudotime, y=gexp)
+    plo <- predict(lo, x= seq(min(pseudotime), max(pseudotime), by=1))
+    mode_plo <- plo$x[ which.max( plo$y ) ]
+    return(mode_plo)
+})
+ods.ordered <- names(sort(order))
+
+## Visualize as heatmap
+m <- matcpm[rev(ods.ordered), names(sort(pseudotime))]
+m <- t(scale(t(m)))
+m[m < -2] <- -2
+m[m > 2] <- 2
+heatmap(m,
+        scale='none',
+        Rowv=NA,
+        Colv=NA,
+        col=colorRampPalette(c('blue', 'white', 'red'))(100),
+        cexRow=1,
+        labCol=NA,
+        labRow=NA,
+        ColSideColors=rainbow(length(levels(com)))[com[colnames(m)]])
+```

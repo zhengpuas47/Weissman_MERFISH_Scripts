@@ -5,7 +5,7 @@
             "module": "merlin.analysis.warp",
             "parameters": {
                 "highpass_sigma": 5,
-                "write_fiducial_images": true,
+                "write_fiducial_images": false,
                 "write_aligned_images": false
             }
         },
