@@ -5,7 +5,7 @@
             "module": "merlin.analysis.warp",
             "parameters": {
                 "highpass_sigma": 5,
-                "write_fiducial_images": true,
+                "write_fiducial_images": false,
                 "write_aligned_images": false
             }
         },
@@ -159,7 +159,8 @@
                 "minimum_area": 1,
                 "lowpass_sigma": 0.6,
                 "crop_width": 80,
-                "distance_threshold":0.65
+                "distance_threshold":0.65,
+                "write_decoded_images":false
             }
         },
         {

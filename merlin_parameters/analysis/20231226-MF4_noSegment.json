@@ -159,7 +159,8 @@
                 "minimum_area": 1,
                 "lowpass_sigma": 0.6,
                 "crop_width": 80,
-                "distance_threshold":0.65
+                "distance_threshold":0.65,
+                "write_decoded_images":false
             }
         },
         {
@@ -183,7 +184,7 @@
             "task": "AdaptiveFilterBarcodes",
             "module": "merlin.analysis.filterbarcodes",
             "parameters": {
-                "misidentification_rate": 0.1,
+                "misidentification_rate": 0.05,
                 "decode_task": "Decode",
                 "adaptive_task": "GenerateAdaptiveThreshold"
             }

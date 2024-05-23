@@ -3,9 +3,9 @@
         "account" : "weissman",
         "time" : "12:00:00",
         "n" : 1,
-        "partition" : "weissman",
+        "partition" : "20",
         "mem" : 10000,
-        "nodelist" : "c4b[1,2,15],c3b7",
+        "exclude": "c4b15",
         "out" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stdout",
         "err" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stderr"
     },
