@@ -17,7 +17,7 @@ date +'Starting at %R.'
 #change_to_merlin_environment
 #conda activate merlin_env
 
-merlin -a 20231224-MF5_noSegment.json \
+merlin -a 20231224-MF5_full.json \
 		-o 20240414-MF5_22bit.csv \
 		-c MF5_codebook.csv \
 		-m merscope01_microscope.json \

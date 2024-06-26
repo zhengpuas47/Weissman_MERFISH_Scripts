@@ -38,7 +38,7 @@
         "mem" : 15000
     },
     "FiducialCorrelationWarp" : {
-        "mem" : 2000
+        "mem" : 21000
     },
     "FilterBarcodes" : {
         "mem" : 15000
@@ -80,7 +80,7 @@
         "mem" : 5000
     },
     "PlotPerformance" : {
-        "mem" : 50000
+        "mem" : 80000
     },
     "RefineCellDatabases" : {
         "mem" : 5000

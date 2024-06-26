@@ -3,7 +3,7 @@
         "account" : "weissman",
         "time" : "12:00:00",
         "n" : 1,
-        "partition" : "20",
+        "partition" : "weissman",
         "mem" : 10000,
         "exclude": "c4b15",
         "out" : "/lab/weissman_imaging/puzheng/slurm_reports/MERLin_Jobs/%j.stdout",
@@ -37,7 +37,7 @@
         "mem" : 15000
     },
     "FiducialCorrelationWarp" : {
-        "mem" : 2000
+        "mem" : 20000
     },
     "FilterBarcodes" : {
         "mem" : 15000
@@ -79,7 +79,7 @@
         "mem" : 5000
     },
     "PlotPerformance" : {
-        "mem" : 50000
+        "mem" : 80000
     },
     "RefineCellDatabases" : {
         "mem" : 5000

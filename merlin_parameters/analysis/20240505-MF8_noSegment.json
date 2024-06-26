@@ -169,7 +169,7 @@
             "parameters": {
                 "global_align_task": "SimpleGlobalAlignment",
                 "warp_task": "FiducialCorrelationWarp",
-                "data_channels": ["bit1", "bit2", "bit3", "bit4", "bit5", "bit6", "bit7", "bit8", "bit9", "bit10", "bit11", "bit12", "bit13", "bit14", "bit15", "bit16", "DAPI", "polyT"]
+                "data_channels": ["bit1", "bit2", "bit3", "bit4", "bit5", "bit6", "bit7", "bit8", "bit9", "bit10", "bit11", "bit12", "bit13", "bit14", "bit15", "bit16", "DAPI"]
             }
         },
         {
